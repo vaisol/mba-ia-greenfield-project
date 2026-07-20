@@ -1,0 +1,3994 @@
+{
+  "name": "streamtube",
+  "description": "A video sharing platform (YouTube-like) built as a monorepo with NestJS backend API, Next.js frontend, PostgreSQL database, and Docker-based infrastructure. Users can upload, manage, and publish videos; anonymous users can watch freely.",
+  "languages": [
+    "css",
+    "dockerfile",
+    "hbs",
+    "html",
+    "javascript",
+    "json",
+    "markdown",
+    "mermaid",
+    "python",
+    "shell",
+    "typescript",
+    "yaml"
+  ],
+  "frameworks": [
+    "NestJS",
+    "Next.js",
+    "React",
+    "TypeORM",
+    "Tailwind CSS",
+    "Vitest",
+    "Playwright",
+    "Docker",
+    "Docker Compose",
+    "PostgreSQL"
+  ],
+  "files": [
+    {
+      "path": "_claude-sessions/01-correcao-contradicoes-rules-vs-skills.txt",
+      "language": "txt",
+      "sizeLines": 1043,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "_claude-sessions/02-planejamento-de-implementacao-fase01.txt",
+      "language": "txt",
+      "sizeLines": 307,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "_claude-sessions/03-atualizacao-claude-md-info-docker.txt",
+      "language": "txt",
+      "sizeLines": 168,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "_claude-sessions/04-simpilfy-fase01.txt",
+      "language": "txt",
+      "sizeLines": 80,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "_claude-sessions/05-git-commit-fase01-e-claude.md.txt",
+      "language": "txt",
+      "sizeLines": 68,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "_claude-sessions/06-atualizando-skill-plan-impl-detalhes-obscuros.txt",
+      "language": "txt",
+      "sizeLines": 406,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "_claude-sessions/07-atualizando-skill-plan-boas-praticas-rest.txt",
+      "language": "txt",
+      "sizeLines": 710,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "_claude-sessions/08-fase02-correcoes-01.txt",
+      "language": "txt",
+      "sizeLines": 900,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "_claude-sessions/09-fase02-correcoes-02.txt",
+      "language": "txt",
+      "sizeLines": 1223,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "_claude-sessions/10-melhorias-na-fundacao-ia.txt",
+      "language": "txt",
+      "sizeLines": 1456,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "_claude-sessions/11-criando-design-system-rules.txt",
+      "language": "txt",
+      "sizeLines": 367,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "_claude-sessions/12-adaptacao-docs-phases-e-td-existentes.txt",
+      "language": "txt",
+      "sizeLines": 1506,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "_claude-sessions/13-criando-fundacao-ia-nextjs-e-atualizando-a-do-nestjs.txt",
+      "language": "txt",
+      "sizeLines": 793,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/agents/decisions-correlator.md",
+      "language": "markdown",
+      "sizeLines": 100,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/agents/decisions-detail-reader.md",
+      "language": "markdown",
+      "sizeLines": 132,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/agents/decisions-reader.md",
+      "language": "markdown",
+      "sizeLines": 129,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/agents/inventory-digest-reader.md",
+      "language": "markdown",
+      "sizeLines": 130,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/agents/phases-reader.md",
+      "language": "markdown",
+      "sizeLines": 207,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/agents/plan-reader.md",
+      "language": "markdown",
+      "sizeLines": 92,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/rules/auth-jwt.md",
+      "language": "markdown",
+      "sizeLines": 69,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/rules/nestjs-common-conventions.md",
+      "language": "markdown",
+      "sizeLines": 45,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/rules/nestjs-controllers.md",
+      "language": "markdown",
+      "sizeLines": 143,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/rules/nestjs-dtos.md",
+      "language": "markdown",
+      "sizeLines": 59,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/rules/nestjs-entities.md",
+      "language": "markdown",
+      "sizeLines": 32,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/rules/nestjs-layer-separation.md",
+      "language": "markdown",
+      "sizeLines": 60,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/rules/nestjs-modules.md",
+      "language": "markdown",
+      "sizeLines": 14,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/rules/nestjs-services.md",
+      "language": "markdown",
+      "sizeLines": 69,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/rules/nestjs-testing.md",
+      "language": "markdown",
+      "sizeLines": 96,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/rules/next-frontend-bff-api.md",
+      "language": "markdown",
+      "sizeLines": 101,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/rules/next-frontend-code-quality.md",
+      "language": "markdown",
+      "sizeLines": 103,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/rules/next-frontend-msw-mocks.md",
+      "language": "markdown",
+      "sizeLines": 127,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/rules/next-frontend-testing.md",
+      "language": "markdown",
+      "sizeLines": 33,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/rules/next-frontend-ui.md",
+      "language": "markdown",
+      "sizeLines": 84,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/rules/typeorm-migrations.md",
+      "language": "markdown",
+      "sizeLines": 78,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/rules/typeorm-queries.md",
+      "language": "markdown",
+      "sizeLines": 66,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/rules/typescript-strict.md",
+      "language": "markdown",
+      "sizeLines": 59,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/settings.json",
+      "language": "json",
+      "sizeLines": 17,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".claude/skills/decide/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 225,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/figma-apply-tokens-tailwind-v4/scripts/apply.py",
+      "language": "python",
+      "sizeLines": 1283,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".claude/skills/figma-apply-tokens-tailwind-v4/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 60,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/figma-audit-tokens/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 664,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/generate-test-guide/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 460,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/generate-test-guide/testing-fundamentals.md",
+      "language": "markdown",
+      "sizeLines": 129,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/implement-phase/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 177,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/implement/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 591,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/nestjs-best-practices/rules/_sections.md",
+      "language": "markdown",
+      "sizeLines": 56,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/nestjs-best-practices/rules/_template.md",
+      "language": "markdown",
+      "sizeLines": 28,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/nestjs-best-practices/rules/api-use-dto-serialization.md",
+      "language": "markdown",
+      "sizeLines": 164,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/nestjs-best-practices/rules/api-use-interceptors.md",
+      "language": "markdown",
+      "sizeLines": 202,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/nestjs-best-practices/rules/api-use-pipes.md",
+      "language": "markdown",
+      "sizeLines": 205,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/nestjs-best-practices/rules/api-versioning.md",
+      "language": "markdown",
+      "sizeLines": 191,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/nestjs-best-practices/rules/arch-avoid-circular-deps.md",
+      "language": "markdown",
+      "sizeLines": 80,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/nestjs-best-practices/rules/arch-feature-modules.md",
+      "language": "markdown",
+      "sizeLines": 82,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/nestjs-best-practices/rules/arch-module-sharing.md",
+      "language": "markdown",
+      "sizeLines": 141,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/nestjs-best-practices/rules/arch-single-responsibility.md",
+      "language": "markdown",
+      "sizeLines": 108,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/nestjs-best-practices/rules/arch-use-events.md",
+      "language": "markdown",
+      "sizeLines": 108,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/nestjs-best-practices/rules/arch-use-repository-pattern.md",
+      "language": "markdown",
+      "sizeLines": 97,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/nestjs-best-practices/rules/db-avoid-n-plus-one.md",
+      "language": "markdown",
+      "sizeLines": 139,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/nestjs-best-practices/rules/db-use-migrations.md",
+      "language": "markdown",
+      "sizeLines": 129,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/nestjs-best-practices/rules/db-use-transactions.md",
+      "language": "markdown",
+      "sizeLines": 140,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/nestjs-best-practices/rules/devops-graceful-shutdown.md",
+      "language": "markdown",
+      "sizeLines": 222,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/nestjs-best-practices/rules/devops-use-config-module.md",
+      "language": "markdown",
+      "sizeLines": 167,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/nestjs-best-practices/rules/devops-use-logging.md",
+      "language": "markdown",
+      "sizeLines": 232,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/nestjs-best-practices/rules/di-avoid-service-locator.md",
+      "language": "markdown",
+      "sizeLines": 104,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/nestjs-best-practices/rules/di-interface-segregation.md",
+      "language": "markdown",
+      "sizeLines": 165,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/nestjs-best-practices/rules/di-liskov-substitution.md",
+      "language": "markdown",
+      "sizeLines": 221,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/nestjs-best-practices/rules/di-prefer-constructor-injection.md",
+      "language": "markdown",
+      "sizeLines": 86,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/nestjs-best-practices/rules/di-scope-awareness.md",
+      "language": "markdown",
+      "sizeLines": 94,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/nestjs-best-practices/rules/di-use-interfaces-tokens.md",
+      "language": "markdown",
+      "sizeLines": 101,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/nestjs-best-practices/rules/error-handle-async-errors.md",
+      "language": "markdown",
+      "sizeLines": 125,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/nestjs-best-practices/rules/error-throw-http-exceptions.md",
+      "language": "markdown",
+      "sizeLines": 168,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/nestjs-best-practices/rules/error-use-exception-filters.md",
+      "language": "markdown",
+      "sizeLines": 137,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/nestjs-best-practices/rules/micro-use-health-checks.md",
+      "language": "markdown",
+      "sizeLines": 226,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/nestjs-best-practices/rules/micro-use-patterns.md",
+      "language": "markdown",
+      "sizeLines": 167,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/nestjs-best-practices/rules/micro-use-queues.md",
+      "language": "markdown",
+      "sizeLines": 252,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/nestjs-best-practices/rules/perf-async-hooks.md",
+      "language": "markdown",
+      "sizeLines": 109,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/nestjs-best-practices/rules/perf-lazy-loading.md",
+      "language": "markdown",
+      "sizeLines": 121,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/nestjs-best-practices/rules/perf-optimize-database.md",
+      "language": "markdown",
+      "sizeLines": 131,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/nestjs-best-practices/rules/perf-use-caching.md",
+      "language": "markdown",
+      "sizeLines": 128,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/nestjs-best-practices/rules/security-auth-jwt.md",
+      "language": "markdown",
+      "sizeLines": 146,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/nestjs-best-practices/rules/security-rate-limiting.md",
+      "language": "markdown",
+      "sizeLines": 125,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/nestjs-best-practices/rules/security-sanitize-output.md",
+      "language": "markdown",
+      "sizeLines": 139,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/nestjs-best-practices/rules/security-use-guards.md",
+      "language": "markdown",
+      "sizeLines": 135,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/nestjs-best-practices/rules/security-validate-all-input.md",
+      "language": "markdown",
+      "sizeLines": 150,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/nestjs-best-practices/rules/test-e2e-supertest.md",
+      "language": "markdown",
+      "sizeLines": 178,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/nestjs-best-practices/rules/test-mock-external-services.md",
+      "language": "markdown",
+      "sizeLines": 179,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/nestjs-best-practices/rules/test-use-testing-module.md",
+      "language": "markdown",
+      "sizeLines": 153,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/nestjs-best-practices/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 139,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/next-best-practices/async-patterns.md",
+      "language": "markdown",
+      "sizeLines": 87,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/next-best-practices/bundling.md",
+      "language": "markdown",
+      "sizeLines": 180,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/next-best-practices/data-patterns.md",
+      "language": "markdown",
+      "sizeLines": 297,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/next-best-practices/debug-tricks.md",
+      "language": "markdown",
+      "sizeLines": 105,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/next-best-practices/directives.md",
+      "language": "markdown",
+      "sizeLines": 73,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/next-best-practices/error-handling.md",
+      "language": "markdown",
+      "sizeLines": 227,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/next-best-practices/file-conventions.md",
+      "language": "markdown",
+      "sizeLines": 139,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/next-best-practices/font.md",
+      "language": "markdown",
+      "sizeLines": 245,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/next-best-practices/functions.md",
+      "language": "markdown",
+      "sizeLines": 108,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/next-best-practices/hydration-error.md",
+      "language": "markdown",
+      "sizeLines": 91,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/next-best-practices/image.md",
+      "language": "markdown",
+      "sizeLines": 173,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/next-best-practices/metadata.md",
+      "language": "markdown",
+      "sizeLines": 301,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/next-best-practices/parallel-routes.md",
+      "language": "markdown",
+      "sizeLines": 287,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/next-best-practices/route-handlers.md",
+      "language": "markdown",
+      "sizeLines": 146,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/next-best-practices/rsc-boundaries.md",
+      "language": "markdown",
+      "sizeLines": 159,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/next-best-practices/runtime-selection.md",
+      "language": "markdown",
+      "sizeLines": 39,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/next-best-practices/scripts.md",
+      "language": "markdown",
+      "sizeLines": 141,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/next-best-practices/self-hosting.md",
+      "language": "markdown",
+      "sizeLines": 371,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/next-best-practices/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 153,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/next-best-practices/suspense-boundaries.md",
+      "language": "markdown",
+      "sizeLines": 67,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/plan-build/phase-a.md",
+      "language": "markdown",
+      "sizeLines": 206,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/plan-build/phase-b.md",
+      "language": "markdown",
+      "sizeLines": 745,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/plan-build/phase-c.md",
+      "language": "markdown",
+      "sizeLines": 133,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/plan-build/references/frontend-drift-report-schema.md",
+      "language": "markdown",
+      "sizeLines": 305,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/plan-build/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 292,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/plan-build/templates/frontend-runtime-si.md",
+      "language": "markdown",
+      "sizeLines": 115,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/plan-build/templates/screen-si.md",
+      "language": "markdown",
+      "sizeLines": 183,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/plan-build/templates/tech-specs/api-contracts.md",
+      "language": "markdown",
+      "sizeLines": 123,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/plan-build/templates/tech-specs/auth-matrix.md",
+      "language": "markdown",
+      "sizeLines": 12,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/plan-build/templates/tech-specs/data-model.md",
+      "language": "markdown",
+      "sizeLines": 18,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/plan-build/templates/tech-specs/error-catalog.md",
+      "language": "markdown",
+      "sizeLines": 12,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/plan-build/templates/tech-specs/events-messages.md",
+      "language": "markdown",
+      "sizeLines": 20,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/plan-build/templates/tech-specs/frontend-runtime.md",
+      "language": "markdown",
+      "sizeLines": 137,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/plan-build/templates/tech-specs/traceability-matrix.md",
+      "language": "markdown",
+      "sizeLines": 31,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/plan-build/templates/tech-specs/ui-contracts.md",
+      "language": "markdown",
+      "sizeLines": 80,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/plan-context/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 506,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/plan-phase/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 504,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/plan-pipeline/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 356,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/plan-pipeline/slicing-implementation-plan.md",
+      "language": "markdown",
+      "sizeLines": 408,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/plan-resolve/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 354,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/plan-rule-author/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 654,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/plan-test-specs/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 438,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/plan-validate/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 419,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/playwright-cli/references/element-attributes.md",
+      "language": "markdown",
+      "sizeLines": 23,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/playwright-cli/references/playwright-tests.md",
+      "language": "markdown",
+      "sizeLines": 39,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/playwright-cli/references/request-mocking.md",
+      "language": "markdown",
+      "sizeLines": 87,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/playwright-cli/references/running-code.md",
+      "language": "markdown",
+      "sizeLines": 241,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/playwright-cli/references/session-management.md",
+      "language": "markdown",
+      "sizeLines": 225,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/playwright-cli/references/spec-driven-testing.md",
+      "language": "markdown",
+      "sizeLines": 305,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/playwright-cli/references/storage-state.md",
+      "language": "markdown",
+      "sizeLines": 275,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/playwright-cli/references/test-generation.md",
+      "language": "markdown",
+      "sizeLines": 134,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/playwright-cli/references/tracing.md",
+      "language": "markdown",
+      "sizeLines": 139,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/playwright-cli/references/video-recording.md",
+      "language": "markdown",
+      "sizeLines": 143,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/playwright-cli/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 388,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/research/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 433,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/screen-inventory/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 515,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/testing-guide-nestjs-project/artifacts/controllers.md",
+      "language": "markdown",
+      "sizeLines": 124,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/testing-guide-nestjs-project/artifacts/dtos.md",
+      "language": "markdown",
+      "sizeLines": 77,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/testing-guide-nestjs-project/artifacts/entities.md",
+      "language": "markdown",
+      "sizeLines": 111,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/testing-guide-nestjs-project/artifacts/filters.md",
+      "language": "markdown",
+      "sizeLines": 128,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/testing-guide-nestjs-project/artifacts/future-types.md",
+      "language": "markdown",
+      "sizeLines": 112,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/testing-guide-nestjs-project/artifacts/guards.md",
+      "language": "markdown",
+      "sizeLines": 150,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/testing-guide-nestjs-project/artifacts/interceptors.md",
+      "language": "markdown",
+      "sizeLines": 86,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/testing-guide-nestjs-project/artifacts/middleware.md",
+      "language": "markdown",
+      "sizeLines": 60,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/testing-guide-nestjs-project/artifacts/modules.md",
+      "language": "markdown",
+      "sizeLines": 111,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/testing-guide-nestjs-project/artifacts/pipes.md",
+      "language": "markdown",
+      "sizeLines": 72,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/testing-guide-nestjs-project/artifacts/services.md",
+      "language": "markdown",
+      "sizeLines": 170,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/testing-guide-nestjs-project/artifacts/strategies.md",
+      "language": "markdown",
+      "sizeLines": 91,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/testing-guide-nestjs-project/references/external-systems.md",
+      "language": "markdown",
+      "sizeLines": 178,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/testing-guide-nestjs-project/references/file-conventions.md",
+      "language": "markdown",
+      "sizeLines": 130,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/testing-guide-nestjs-project/references/gotchas.md",
+      "language": "markdown",
+      "sizeLines": 195,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/testing-guide-nestjs-project/references/mock-health-rules.md",
+      "language": "markdown",
+      "sizeLines": 86,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/testing-guide-nestjs-project/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 140,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/testing-guide-next-frontend/artifacts/client-components.md",
+      "language": "markdown",
+      "sizeLines": 77,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/testing-guide-next-frontend/artifacts/feature-components.md",
+      "language": "markdown",
+      "sizeLines": 32,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/testing-guide-next-frontend/artifacts/future-types.md",
+      "language": "markdown",
+      "sizeLines": 36,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/testing-guide-next-frontend/artifacts/hooks.md",
+      "language": "markdown",
+      "sizeLines": 54,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/testing-guide-next-frontend/artifacts/icons.md",
+      "language": "markdown",
+      "sizeLines": 27,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/testing-guide-next-frontend/artifacts/layouts.md",
+      "language": "markdown",
+      "sizeLines": 39,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/testing-guide-next-frontend/artifacts/pages.md",
+      "language": "markdown",
+      "sizeLines": 63,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/testing-guide-next-frontend/artifacts/route-handlers.md",
+      "language": "markdown",
+      "sizeLines": 88,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/testing-guide-next-frontend/artifacts/ui-primitives.md",
+      "language": "markdown",
+      "sizeLines": 31,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/testing-guide-next-frontend/artifacts/utilities.md",
+      "language": "markdown",
+      "sizeLines": 59,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/testing-guide-next-frontend/references/external-systems.md",
+      "language": "markdown",
+      "sizeLines": 28,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/testing-guide-next-frontend/references/file-conventions.md",
+      "language": "markdown",
+      "sizeLines": 64,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/testing-guide-next-frontend/references/gotchas.md",
+      "language": "markdown",
+      "sizeLines": 46,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/testing-guide-next-frontend/references/mock-health-rules.md",
+      "language": "markdown",
+      "sizeLines": 35,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/testing-guide-next-frontend/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 137,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/typeorm/rules/_sections.md",
+      "language": "markdown",
+      "sizeLines": 26,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/typeorm/rules/_template.md",
+      "language": "markdown",
+      "sizeLines": 26,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/typeorm/rules/config-datasource-setup.md",
+      "language": "markdown",
+      "sizeLines": 83,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/typeorm/rules/config-typescript-settings.md",
+      "language": "markdown",
+      "sizeLines": 48,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/typeorm/rules/conv-eager-lazy-loading.md",
+      "language": "markdown",
+      "sizeLines": 74,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/typeorm/rules/conv-indexes-naming-cascades.md",
+      "language": "markdown",
+      "sizeLines": 108,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/typeorm/rules/entity-column-types.md",
+      "language": "markdown",
+      "sizeLines": 99,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/typeorm/rules/entity-define-proper-structure.md",
+      "language": "markdown",
+      "sizeLines": 76,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/typeorm/rules/entity-primary-key-strategy.md",
+      "language": "markdown",
+      "sizeLines": 61,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/typeorm/rules/integ-nestjs-setup.md",
+      "language": "markdown",
+      "sizeLines": 90,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/typeorm/rules/migration-file-structure.md",
+      "language": "markdown",
+      "sizeLines": 108,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/typeorm/rules/migration-workflow.md",
+      "language": "markdown",
+      "sizeLines": 80,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/typeorm/rules/query-builder-and-n-plus-one.md",
+      "language": "markdown",
+      "sizeLines": 81,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/typeorm/rules/query-custom-repository.md",
+      "language": "markdown",
+      "sizeLines": 72,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/typeorm/rules/query-repository-basics.md",
+      "language": "markdown",
+      "sizeLines": 76,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/typeorm/rules/rel-many-to-many.md",
+      "language": "markdown",
+      "sizeLines": 77,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/typeorm/rules/rel-one-to-one-and-many.md",
+      "language": "markdown",
+      "sizeLines": 121,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/typeorm/rules/tx-use-transactions.md",
+      "language": "markdown",
+      "sizeLines": 80,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/typeorm/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 71,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/vercel-react-best-practices/rules/_sections.md",
+      "language": "markdown",
+      "sizeLines": 46,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/vercel-react-best-practices/rules/_template.md",
+      "language": "markdown",
+      "sizeLines": 28,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/vercel-react-best-practices/rules/advanced-effect-event-deps.md",
+      "language": "markdown",
+      "sizeLines": 56,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/vercel-react-best-practices/rules/advanced-event-handler-refs.md",
+      "language": "markdown",
+      "sizeLines": 55,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/vercel-react-best-practices/rules/advanced-init-once.md",
+      "language": "markdown",
+      "sizeLines": 42,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/vercel-react-best-practices/rules/advanced-use-latest.md",
+      "language": "markdown",
+      "sizeLines": 39,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/vercel-react-best-practices/rules/async-api-routes.md",
+      "language": "markdown",
+      "sizeLines": 38,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/vercel-react-best-practices/rules/async-cheap-condition-before-await.md",
+      "language": "markdown",
+      "sizeLines": 37,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/vercel-react-best-practices/rules/async-defer-await.md",
+      "language": "markdown",
+      "sizeLines": 82,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/vercel-react-best-practices/rules/async-dependencies.md",
+      "language": "markdown",
+      "sizeLines": 51,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/vercel-react-best-practices/rules/async-parallel.md",
+      "language": "markdown",
+      "sizeLines": 28,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/vercel-react-best-practices/rules/async-suspense-boundaries.md",
+      "language": "markdown",
+      "sizeLines": 99,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/vercel-react-best-practices/rules/bundle-analyzable-paths.md",
+      "language": "markdown",
+      "sizeLines": 63,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/vercel-react-best-practices/rules/bundle-barrel-imports.md",
+      "language": "markdown",
+      "sizeLines": 60,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/vercel-react-best-practices/rules/bundle-conditional.md",
+      "language": "markdown",
+      "sizeLines": 31,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/vercel-react-best-practices/rules/bundle-defer-third-party.md",
+      "language": "markdown",
+      "sizeLines": 49,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/vercel-react-best-practices/rules/bundle-dynamic-imports.md",
+      "language": "markdown",
+      "sizeLines": 35,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/vercel-react-best-practices/rules/bundle-preload.md",
+      "language": "markdown",
+      "sizeLines": 50,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/vercel-react-best-practices/rules/client-event-listeners.md",
+      "language": "markdown",
+      "sizeLines": 74,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/vercel-react-best-practices/rules/client-localstorage-schema.md",
+      "language": "markdown",
+      "sizeLines": 71,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/vercel-react-best-practices/rules/client-passive-event-listeners.md",
+      "language": "markdown",
+      "sizeLines": 48,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/vercel-react-best-practices/rules/client-swr-dedup.md",
+      "language": "markdown",
+      "sizeLines": 56,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/vercel-react-best-practices/rules/js-batch-dom-css.md",
+      "language": "markdown",
+      "sizeLines": 107,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/vercel-react-best-practices/rules/js-cache-function-results.md",
+      "language": "markdown",
+      "sizeLines": 80,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/vercel-react-best-practices/rules/js-cache-property-access.md",
+      "language": "markdown",
+      "sizeLines": 28,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/vercel-react-best-practices/rules/js-cache-storage.md",
+      "language": "markdown",
+      "sizeLines": 70,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/vercel-react-best-practices/rules/js-combine-iterations.md",
+      "language": "markdown",
+      "sizeLines": 32,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/vercel-react-best-practices/rules/js-early-exit.md",
+      "language": "markdown",
+      "sizeLines": 50,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/vercel-react-best-practices/rules/js-flatmap-filter.md",
+      "language": "markdown",
+      "sizeLines": 60,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/vercel-react-best-practices/rules/js-hoist-regexp.md",
+      "language": "markdown",
+      "sizeLines": 45,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/vercel-react-best-practices/rules/js-index-maps.md",
+      "language": "markdown",
+      "sizeLines": 37,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/vercel-react-best-practices/rules/js-length-check-first.md",
+      "language": "markdown",
+      "sizeLines": 49,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/vercel-react-best-practices/rules/js-min-max-loop.md",
+      "language": "markdown",
+      "sizeLines": 82,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/vercel-react-best-practices/rules/js-request-idle-callback.md",
+      "language": "markdown",
+      "sizeLines": 105,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/vercel-react-best-practices/rules/js-set-map-lookups.md",
+      "language": "markdown",
+      "sizeLines": 24,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/vercel-react-best-practices/rules/js-tosorted-immutable.md",
+      "language": "markdown",
+      "sizeLines": 57,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/vercel-react-best-practices/rules/rendering-activity.md",
+      "language": "markdown",
+      "sizeLines": 26,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/vercel-react-best-practices/rules/rendering-animate-svg-wrapper.md",
+      "language": "markdown",
+      "sizeLines": 47,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/vercel-react-best-practices/rules/rendering-conditional-render.md",
+      "language": "markdown",
+      "sizeLines": 40,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/vercel-react-best-practices/rules/rendering-content-visibility.md",
+      "language": "markdown",
+      "sizeLines": 38,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/vercel-react-best-practices/rules/rendering-hoist-jsx.md",
+      "language": "markdown",
+      "sizeLines": 46,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/vercel-react-best-practices/rules/rendering-hydration-no-flicker.md",
+      "language": "markdown",
+      "sizeLines": 82,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/vercel-react-best-practices/rules/rendering-hydration-suppress-warning.md",
+      "language": "markdown",
+      "sizeLines": 30,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/vercel-react-best-practices/rules/rendering-resource-hints.md",
+      "language": "markdown",
+      "sizeLines": 85,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/vercel-react-best-practices/rules/rendering-script-defer-async.md",
+      "language": "markdown",
+      "sizeLines": 68,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/vercel-react-best-practices/rules/rendering-svg-precision.md",
+      "language": "markdown",
+      "sizeLines": 28,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/vercel-react-best-practices/rules/rendering-usetransition-loading.md",
+      "language": "markdown",
+      "sizeLines": 75,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/vercel-react-best-practices/rules/rerender-defer-reads.md",
+      "language": "markdown",
+      "sizeLines": 39,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/vercel-react-best-practices/rules/rerender-dependencies.md",
+      "language": "markdown",
+      "sizeLines": 45,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/vercel-react-best-practices/rules/rerender-derived-state-no-effect.md",
+      "language": "markdown",
+      "sizeLines": 40,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/vercel-react-best-practices/rules/rerender-derived-state.md",
+      "language": "markdown",
+      "sizeLines": 29,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/vercel-react-best-practices/rules/rerender-functional-setstate.md",
+      "language": "markdown",
+      "sizeLines": 74,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/vercel-react-best-practices/rules/rerender-lazy-state-init.md",
+      "language": "markdown",
+      "sizeLines": 58,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/vercel-react-best-practices/rules/rerender-memo-with-default-value.md",
+      "language": "markdown",
+      "sizeLines": 38,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/vercel-react-best-practices/rules/rerender-memo.md",
+      "language": "markdown",
+      "sizeLines": 44,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/vercel-react-best-practices/rules/rerender-move-effect-to-event.md",
+      "language": "markdown",
+      "sizeLines": 45,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/vercel-react-best-practices/rules/rerender-no-inline-components.md",
+      "language": "markdown",
+      "sizeLines": 82,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/vercel-react-best-practices/rules/rerender-simple-expression-in-memo.md",
+      "language": "markdown",
+      "sizeLines": 35,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/vercel-react-best-practices/rules/rerender-split-combined-hooks.md",
+      "language": "markdown",
+      "sizeLines": 64,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/vercel-react-best-practices/rules/rerender-transitions.md",
+      "language": "markdown",
+      "sizeLines": 40,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/vercel-react-best-practices/rules/rerender-use-deferred-value.md",
+      "language": "markdown",
+      "sizeLines": 59,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/vercel-react-best-practices/rules/rerender-use-ref-transient-values.md",
+      "language": "markdown",
+      "sizeLines": 73,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/vercel-react-best-practices/rules/server-after-nonblocking.md",
+      "language": "markdown",
+      "sizeLines": 73,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/vercel-react-best-practices/rules/server-auth-actions.md",
+      "language": "markdown",
+      "sizeLines": 96,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/vercel-react-best-practices/rules/server-cache-lru.md",
+      "language": "markdown",
+      "sizeLines": 41,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/vercel-react-best-practices/rules/server-cache-react.md",
+      "language": "markdown",
+      "sizeLines": 76,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/vercel-react-best-practices/rules/server-dedup-props.md",
+      "language": "markdown",
+      "sizeLines": 65,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/vercel-react-best-practices/rules/server-hoist-static-io.md",
+      "language": "markdown",
+      "sizeLines": 149,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/vercel-react-best-practices/rules/server-no-shared-module-state.md",
+      "language": "markdown",
+      "sizeLines": 50,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/vercel-react-best-practices/rules/server-parallel-fetching.md",
+      "language": "markdown",
+      "sizeLines": 83,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/vercel-react-best-practices/rules/server-parallel-nested-fetching.md",
+      "language": "markdown",
+      "sizeLines": 34,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/vercel-react-best-practices/rules/server-serialization.md",
+      "language": "markdown",
+      "sizeLines": 38,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/vercel-react-best-practices/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 149,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".mcp.json",
+      "language": "json",
+      "sizeLines": 11,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".mcp.json.example",
+      "language": "example",
+      "sizeLines": 15,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".understand-anything/.understandignore",
+      "language": "unknown",
+      "sizeLines": 23,
+      "fileCategory": "code"
+    },
+    {
+      "path": "CLAUDE.md",
+      "language": "markdown",
+      "sizeLines": 106,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/decisions/technical-decisions-next-frontend-config-base.md",
+      "language": "markdown",
+      "sizeLines": 193,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/decisions/technical-decisions-next-frontend-msw-foundation.md",
+      "language": "markdown",
+      "sizeLines": 394,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/decisions/technical-decisions-next-frontend-openapi-typing.md",
+      "language": "markdown",
+      "sizeLines": 295,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/decisions/technical-decisions-openapi-docs-nestjs.md",
+      "language": "markdown",
+      "sizeLines": 122,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/decisions/technical-decisions-phase-01-configuracao-base.md",
+      "language": "markdown",
+      "sizeLines": 205,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/decisions/technical-decisions-phase-02-auth-frontend.md",
+      "language": "markdown",
+      "sizeLines": 360,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/decisions/technical-decisions-phase-02-auth.md",
+      "language": "markdown",
+      "sizeLines": 316,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/design-system-ai-implementable.md",
+      "language": "markdown",
+      "sizeLines": 171,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/design-system-pillars.md",
+      "language": "markdown",
+      "sizeLines": 646,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/diagrams/skill-implement-phase.mermaid",
+      "language": "mermaid",
+      "sizeLines": 64,
+      "fileCategory": "code"
+    },
+    {
+      "path": "docs/diagrams/skill-plan-phase.mermaid",
+      "language": "mermaid",
+      "sizeLines": 42,
+      "fileCategory": "code"
+    },
+    {
+      "path": "docs/diagrams/skill-research.mermaid",
+      "language": "mermaid",
+      "sizeLines": 32,
+      "fileCategory": "code"
+    },
+    {
+      "path": "docs/diagrams/skills-workflow.mermaid",
+      "language": "mermaid",
+      "sizeLines": 28,
+      "fileCategory": "code"
+    },
+    {
+      "path": "docs/diagrams/software-arch.mermaid",
+      "language": "mermaid",
+      "sizeLines": 53,
+      "fileCategory": "code"
+    },
+    {
+      "path": "docs/figma-audit.json",
+      "language": "json",
+      "sizeLines": 79,
+      "fileCategory": "config"
+    },
+    {
+      "path": "docs/inventories/screen-inventory-phase-02-auth-frontend.md",
+      "language": "markdown",
+      "sizeLines": 165,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/inventories/screen-inventory-phase-02-auth-frontend.progress.md",
+      "language": "markdown",
+      "sizeLines": 23,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/phases/phase-01-configuracao-base/context.md",
+      "language": "markdown",
+      "sizeLines": 104,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/phases/phase-01-configuracao-base/phase-01-configuracao-base.md",
+      "language": "markdown",
+      "sizeLines": 129,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/phases/phase-01-configuracao-base/progress.md",
+      "language": "markdown",
+      "sizeLines": 24,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/phases/phase-01-configuracao-base/validation.md",
+      "language": "markdown",
+      "sizeLines": 47,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/phases/phase-02-auth-frontend/context.md",
+      "language": "markdown",
+      "sizeLines": 308,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/phases/phase-02-auth-frontend/frontend-drift-report.md",
+      "language": "markdown",
+      "sizeLines": 302,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/phases/phase-02-auth-frontend/library-refs.md",
+      "language": "markdown",
+      "sizeLines": 256,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/phases/phase-02-auth-frontend/phase-02-auth-frontend.md",
+      "language": "markdown",
+      "sizeLines": 998,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/phases/phase-02-auth-frontend/progress.md",
+      "language": "markdown",
+      "sizeLines": 197,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/phases/phase-02-auth-frontend/validation.md",
+      "language": "markdown",
+      "sizeLines": 174,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/phases/phase-02-auth/context.md",
+      "language": "markdown",
+      "sizeLines": 185,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/phases/phase-02-auth/phase-02-auth.md",
+      "language": "markdown",
+      "sizeLines": 840,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/phases/phase-02-auth/progress.md",
+      "language": "markdown",
+      "sizeLines": 96,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/phases/phase-02-auth/validation.md",
+      "language": "markdown",
+      "sizeLines": 47,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/project-plan.md",
+      "language": "markdown",
+      "sizeLines": 170,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/tasks/task-next-frontend-config-base/context.md",
+      "language": "markdown",
+      "sizeLines": 177,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/tasks/task-next-frontend-config-base/library-refs.md",
+      "language": "markdown",
+      "sizeLines": 141,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/tasks/task-next-frontend-config-base/progress.md",
+      "language": "markdown",
+      "sizeLines": 19,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/tasks/task-next-frontend-config-base/task-next-frontend-config-base.md",
+      "language": "markdown",
+      "sizeLines": 198,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/tasks/task-next-frontend-config-base/validation.md",
+      "language": "markdown",
+      "sizeLines": 56,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/tasks/task-next-frontend-msw-foundation/context.md",
+      "language": "markdown",
+      "sizeLines": 204,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/tasks/task-next-frontend-msw-foundation/progress.md",
+      "language": "markdown",
+      "sizeLines": 46,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/tasks/task-next-frontend-msw-foundation/task-next-frontend-msw-foundation.md",
+      "language": "markdown",
+      "sizeLines": 316,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/tasks/task-next-frontend-msw-foundation/validation.md",
+      "language": "markdown",
+      "sizeLines": 63,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/tasks/task-next-frontend-openapi-typing/context.md",
+      "language": "markdown",
+      "sizeLines": 213,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/tasks/task-next-frontend-openapi-typing/library-refs.md",
+      "language": "markdown",
+      "sizeLines": 219,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/tasks/task-next-frontend-openapi-typing/progress.md",
+      "language": "markdown",
+      "sizeLines": 51,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/tasks/task-next-frontend-openapi-typing/task-next-frontend-openapi-typing.md",
+      "language": "markdown",
+      "sizeLines": 426,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/tasks/task-next-frontend-openapi-typing/validation.md",
+      "language": "markdown",
+      "sizeLines": 66,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/tasks/task-openapi-docs-nestjs/context.md",
+      "language": "markdown",
+      "sizeLines": 171,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/tasks/task-openapi-docs-nestjs/library-refs.md",
+      "language": "markdown",
+      "sizeLines": 205,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/tasks/task-openapi-docs-nestjs/progress.md",
+      "language": "markdown",
+      "sizeLines": 38,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/tasks/task-openapi-docs-nestjs/task-openapi-docs-nestjs.md",
+      "language": "markdown",
+      "sizeLines": 227,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/tasks/task-openapi-docs-nestjs/validation.md",
+      "language": "markdown",
+      "sizeLines": 56,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "FC Tube.fig",
+      "language": "fig",
+      "sizeLines": 39478,
+      "fileCategory": "code"
+    },
+    {
+      "path": "mcp.example.py",
+      "language": "python",
+      "sizeLines": 28,
+      "fileCategory": "code"
+    },
+    {
+      "path": "nestjs-project/.env.example",
+      "language": "config",
+      "sizeLines": 23,
+      "fileCategory": "config"
+    },
+    {
+      "path": "nestjs-project/api.http",
+      "language": "http",
+      "sizeLines": 120,
+      "fileCategory": "code"
+    },
+    {
+      "path": "nestjs-project/CLAUDE.md",
+      "language": "markdown",
+      "sizeLines": 161,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "nestjs-project/compose.yaml",
+      "language": "yaml",
+      "sizeLines": 36,
+      "fileCategory": "infra"
+    },
+    {
+      "path": "nestjs-project/Dockerfile.dev",
+      "language": "dockerfile",
+      "sizeLines": 8,
+      "fileCategory": "infra"
+    },
+    {
+      "path": "nestjs-project/eslint.config.mjs",
+      "language": "javascript",
+      "sizeLines": 35,
+      "fileCategory": "code"
+    },
+    {
+      "path": "nestjs-project/nest-cli.json",
+      "language": "json",
+      "sizeLines": 19,
+      "fileCategory": "config"
+    },
+    {
+      "path": "nestjs-project/openapi.json",
+      "language": "json",
+      "sizeLines": 521,
+      "fileCategory": "config"
+    },
+    {
+      "path": "nestjs-project/package.json",
+      "language": "json",
+      "sizeLines": 95,
+      "fileCategory": "config"
+    },
+    {
+      "path": "nestjs-project/README.md",
+      "language": "markdown",
+      "sizeLines": 98,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "nestjs-project/src/app.controller.spec.ts",
+      "language": "typescript",
+      "sizeLines": 22,
+      "fileCategory": "code"
+    },
+    {
+      "path": "nestjs-project/src/app.controller.ts",
+      "language": "typescript",
+      "sizeLines": 16,
+      "fileCategory": "code"
+    },
+    {
+      "path": "nestjs-project/src/app.module.ts",
+      "language": "typescript",
+      "sizeLines": 41,
+      "fileCategory": "code"
+    },
+    {
+      "path": "nestjs-project/src/app.service.ts",
+      "language": "typescript",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "nestjs-project/src/auth/auth.constants.ts",
+      "language": "typescript",
+      "sizeLines": 3,
+      "fileCategory": "code"
+    },
+    {
+      "path": "nestjs-project/src/auth/auth.controller.ts",
+      "language": "typescript",
+      "sizeLines": 272,
+      "fileCategory": "code"
+    },
+    {
+      "path": "nestjs-project/src/auth/auth.module.spec.ts",
+      "language": "typescript",
+      "sizeLines": 32,
+      "fileCategory": "code"
+    },
+    {
+      "path": "nestjs-project/src/auth/auth.module.ts",
+      "language": "typescript",
+      "sizeLines": 39,
+      "fileCategory": "code"
+    },
+    {
+      "path": "nestjs-project/src/auth/auth.service.integration-spec.ts",
+      "language": "typescript",
+      "sizeLines": 787,
+      "fileCategory": "code"
+    },
+    {
+      "path": "nestjs-project/src/auth/auth.service.spec.ts",
+      "language": "typescript",
+      "sizeLines": 768,
+      "fileCategory": "code"
+    },
+    {
+      "path": "nestjs-project/src/auth/auth.service.ts",
+      "language": "typescript",
+      "sizeLines": 358,
+      "fileCategory": "code"
+    },
+    {
+      "path": "nestjs-project/src/auth/auth.types.ts",
+      "language": "typescript",
+      "sizeLines": 4,
+      "fileCategory": "code"
+    },
+    {
+      "path": "nestjs-project/src/auth/decorators/current-user.decorator.ts",
+      "language": "typescript",
+      "sizeLines": 9,
+      "fileCategory": "code"
+    },
+    {
+      "path": "nestjs-project/src/auth/decorators/public.decorator.ts",
+      "language": "typescript",
+      "sizeLines": 4,
+      "fileCategory": "code"
+    },
+    {
+      "path": "nestjs-project/src/auth/dto/confirm-email.dto.ts",
+      "language": "typescript",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "nestjs-project/src/auth/dto/forgot-password.dto.ts",
+      "language": "typescript",
+      "sizeLines": 6,
+      "fileCategory": "code"
+    },
+    {
+      "path": "nestjs-project/src/auth/dto/login.dto.ts",
+      "language": "typescript",
+      "sizeLines": 10,
+      "fileCategory": "code"
+    },
+    {
+      "path": "nestjs-project/src/auth/dto/refresh-token.dto.ts",
+      "language": "typescript",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "nestjs-project/src/auth/dto/register.dto.ts",
+      "language": "typescript",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "nestjs-project/src/auth/dto/resend-confirmation.dto.ts",
+      "language": "typescript",
+      "sizeLines": 6,
+      "fileCategory": "code"
+    },
+    {
+      "path": "nestjs-project/src/auth/dto/reset-password.dto.ts",
+      "language": "typescript",
+      "sizeLines": 12,
+      "fileCategory": "code"
+    },
+    {
+      "path": "nestjs-project/src/auth/entities/refresh-token.entity.integration-spec.ts",
+      "language": "typescript",
+      "sizeLines": 153,
+      "fileCategory": "code"
+    },
+    {
+      "path": "nestjs-project/src/auth/entities/refresh-token.entity.ts",
+      "language": "typescript",
+      "sizeLines": 40,
+      "fileCategory": "code"
+    },
+    {
+      "path": "nestjs-project/src/auth/entities/verification-token.entity.integration-spec.ts",
+      "language": "typescript",
+      "sizeLines": 159,
+      "fileCategory": "code"
+    },
+    {
+      "path": "nestjs-project/src/auth/entities/verification-token.entity.ts",
+      "language": "typescript",
+      "sizeLines": 47,
+      "fileCategory": "code"
+    },
+    {
+      "path": "nestjs-project/src/auth/guards/jwt-auth.guard.spec.ts",
+      "language": "typescript",
+      "sizeLines": 91,
+      "fileCategory": "code"
+    },
+    {
+      "path": "nestjs-project/src/auth/guards/jwt-auth.guard.ts",
+      "language": "typescript",
+      "sizeLines": 46,
+      "fileCategory": "code"
+    },
+    {
+      "path": "nestjs-project/src/channels/channels.module.spec.ts",
+      "language": "typescript",
+      "sizeLines": 24,
+      "fileCategory": "code"
+    },
+    {
+      "path": "nestjs-project/src/channels/channels.module.ts",
+      "language": "typescript",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "nestjs-project/src/channels/channels.service.integration-spec.ts",
+      "language": "typescript",
+      "sizeLines": 92,
+      "fileCategory": "code"
+    },
+    {
+      "path": "nestjs-project/src/channels/channels.service.spec.ts",
+      "language": "typescript",
+      "sizeLines": 135,
+      "fileCategory": "code"
+    },
+    {
+      "path": "nestjs-project/src/channels/channels.service.ts",
+      "language": "typescript",
+      "sizeLines": 62,
+      "fileCategory": "code"
+    },
+    {
+      "path": "nestjs-project/src/channels/entities/channel.entity.integration-spec.ts",
+      "language": "typescript",
+      "sizeLines": 134,
+      "fileCategory": "code"
+    },
+    {
+      "path": "nestjs-project/src/channels/entities/channel.entity.ts",
+      "language": "typescript",
+      "sizeLines": 38,
+      "fileCategory": "code"
+    },
+    {
+      "path": "nestjs-project/src/channels/nickname.util.spec.ts",
+      "language": "typescript",
+      "sizeLines": 68,
+      "fileCategory": "code"
+    },
+    {
+      "path": "nestjs-project/src/channels/nickname.util.ts",
+      "language": "typescript",
+      "sizeLines": 26,
+      "fileCategory": "code"
+    },
+    {
+      "path": "nestjs-project/src/common/exceptions/domain.exception.ts",
+      "language": "typescript",
+      "sizeLines": 50,
+      "fileCategory": "code"
+    },
+    {
+      "path": "nestjs-project/src/common/filters/domain-exception.filter.spec.ts",
+      "language": "typescript",
+      "sizeLines": 101,
+      "fileCategory": "code"
+    },
+    {
+      "path": "nestjs-project/src/common/filters/domain-exception.filter.ts",
+      "language": "typescript",
+      "sizeLines": 16,
+      "fileCategory": "code"
+    },
+    {
+      "path": "nestjs-project/src/common/filters/validation-exception.filter.spec.ts",
+      "language": "typescript",
+      "sizeLines": 67,
+      "fileCategory": "code"
+    },
+    {
+      "path": "nestjs-project/src/common/filters/validation-exception.filter.ts",
+      "language": "typescript",
+      "sizeLines": 27,
+      "fileCategory": "code"
+    },
+    {
+      "path": "nestjs-project/src/common/openapi/api-error-envelope.dto.ts",
+      "language": "typescript",
+      "sizeLines": 18,
+      "fileCategory": "code"
+    },
+    {
+      "path": "nestjs-project/src/config/app.config.ts",
+      "language": "typescript",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "nestjs-project/src/config/auth.config.ts",
+      "language": "typescript",
+      "sizeLines": 16,
+      "fileCategory": "code"
+    },
+    {
+      "path": "nestjs-project/src/config/database.config.ts",
+      "language": "typescript",
+      "sizeLines": 9,
+      "fileCategory": "code"
+    },
+    {
+      "path": "nestjs-project/src/config/env.validation.integration-spec.ts",
+      "language": "typescript",
+      "sizeLines": 39,
+      "fileCategory": "code"
+    },
+    {
+      "path": "nestjs-project/src/config/env.validation.ts",
+      "language": "typescript",
+      "sizeLines": 24,
+      "fileCategory": "code"
+    },
+    {
+      "path": "nestjs-project/src/config/mail.config.ts",
+      "language": "typescript",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "nestjs-project/src/config/swagger.config.spec.ts",
+      "language": "typescript",
+      "sizeLines": 46,
+      "fileCategory": "code"
+    },
+    {
+      "path": "nestjs-project/src/config/swagger.config.ts",
+      "language": "typescript",
+      "sizeLines": 5,
+      "fileCategory": "code"
+    },
+    {
+      "path": "nestjs-project/src/database/data-source.ts",
+      "language": "typescript",
+      "sizeLines": 17,
+      "fileCategory": "code"
+    },
+    {
+      "path": "nestjs-project/src/database/migrations.integration-spec.ts",
+      "language": "typescript",
+      "sizeLines": 81,
+      "fileCategory": "code"
+    },
+    {
+      "path": "nestjs-project/src/database/migrations/1775687773260-CreateUsersAndChannels.ts",
+      "language": "typescript",
+      "sizeLines": 25,
+      "fileCategory": "code"
+    },
+    {
+      "path": "nestjs-project/src/database/migrations/1777579850478-CreateAuthTokens.ts",
+      "language": "typescript",
+      "sizeLines": 55,
+      "fileCategory": "code"
+    },
+    {
+      "path": "nestjs-project/src/database/seeds/seed.ts",
+      "language": "typescript",
+      "sizeLines": 14,
+      "fileCategory": "code"
+    },
+    {
+      "path": "nestjs-project/src/mail/mail.constants.ts",
+      "language": "typescript",
+      "sizeLines": 9,
+      "fileCategory": "code"
+    },
+    {
+      "path": "nestjs-project/src/mail/mail.module.spec.ts",
+      "language": "typescript",
+      "sizeLines": 19,
+      "fileCategory": "code"
+    },
+    {
+      "path": "nestjs-project/src/mail/mail.module.ts",
+      "language": "typescript",
+      "sizeLines": 32,
+      "fileCategory": "code"
+    },
+    {
+      "path": "nestjs-project/src/mail/mail.service.integration-spec.ts",
+      "language": "typescript",
+      "sizeLines": 99,
+      "fileCategory": "code"
+    },
+    {
+      "path": "nestjs-project/src/mail/mail.service.ts",
+      "language": "typescript",
+      "sizeLines": 45,
+      "fileCategory": "code"
+    },
+    {
+      "path": "nestjs-project/src/mail/templates/confirmation.hbs",
+      "language": "hbs",
+      "sizeLines": 10,
+      "fileCategory": "code"
+    },
+    {
+      "path": "nestjs-project/src/mail/templates/password-reset.hbs",
+      "language": "hbs",
+      "sizeLines": 10,
+      "fileCategory": "code"
+    },
+    {
+      "path": "nestjs-project/src/main.ts",
+      "language": "typescript",
+      "sizeLines": 44,
+      "fileCategory": "code"
+    },
+    {
+      "path": "nestjs-project/src/metadata.ts",
+      "language": "typescript",
+      "sizeLines": 6,
+      "fileCategory": "code"
+    },
+    {
+      "path": "nestjs-project/src/openapi-export.integration-spec.ts",
+      "language": "typescript",
+      "sizeLines": 131,
+      "fileCategory": "code"
+    },
+    {
+      "path": "nestjs-project/src/openapi-export.ts",
+      "language": "typescript",
+      "sizeLines": 15,
+      "fileCategory": "code"
+    },
+    {
+      "path": "nestjs-project/src/swagger/swagger-document.ts",
+      "language": "typescript",
+      "sizeLines": 21,
+      "fileCategory": "code"
+    },
+    {
+      "path": "nestjs-project/src/test/create-test-data-source.ts",
+      "language": "typescript",
+      "sizeLines": 31,
+      "fileCategory": "code"
+    },
+    {
+      "path": "nestjs-project/src/test/mailpit.ts",
+      "language": "typescript",
+      "sizeLines": 16,
+      "fileCategory": "code"
+    },
+    {
+      "path": "nestjs-project/src/users/entities/user.entity.integration-spec.ts",
+      "language": "typescript",
+      "sizeLines": 92,
+      "fileCategory": "code"
+    },
+    {
+      "path": "nestjs-project/src/users/entities/user.entity.ts",
+      "language": "typescript",
+      "sizeLines": 33,
+      "fileCategory": "code"
+    },
+    {
+      "path": "nestjs-project/src/users/users.module.spec.ts",
+      "language": "typescript",
+      "sizeLines": 24,
+      "fileCategory": "code"
+    },
+    {
+      "path": "nestjs-project/src/users/users.module.ts",
+      "language": "typescript",
+      "sizeLines": 12,
+      "fileCategory": "code"
+    },
+    {
+      "path": "nestjs-project/src/users/users.service.integration-spec.ts",
+      "language": "typescript",
+      "sizeLines": 127,
+      "fileCategory": "code"
+    },
+    {
+      "path": "nestjs-project/src/users/users.service.ts",
+      "language": "typescript",
+      "sizeLines": 55,
+      "fileCategory": "code"
+    },
+    {
+      "path": "nestjs-project/test/app.e2e-spec.ts",
+      "language": "typescript",
+      "sizeLines": 29,
+      "fileCategory": "code"
+    },
+    {
+      "path": "nestjs-project/test/auth.e2e-spec.ts",
+      "language": "typescript",
+      "sizeLines": 718,
+      "fileCategory": "code"
+    },
+    {
+      "path": "nestjs-project/test/jest-e2e.json",
+      "language": "json",
+      "sizeLines": 10,
+      "fileCategory": "config"
+    },
+    {
+      "path": "nestjs-project/test/swagger.e2e-spec.ts",
+      "language": "typescript",
+      "sizeLines": 114,
+      "fileCategory": "code"
+    },
+    {
+      "path": "nestjs-project/tsconfig.build.json",
+      "language": "json",
+      "sizeLines": 4,
+      "fileCategory": "config"
+    },
+    {
+      "path": "nestjs-project/tsconfig.json",
+      "language": "json",
+      "sizeLines": 26,
+      "fileCategory": "config"
+    },
+    {
+      "path": "next-frontend/app/(auth)/forgot-password/page.tsx",
+      "language": "typescript",
+      "sizeLines": 36,
+      "fileCategory": "code"
+    },
+    {
+      "path": "next-frontend/app/(auth)/login/page.tsx",
+      "language": "typescript",
+      "sizeLines": 24,
+      "fileCategory": "code"
+    },
+    {
+      "path": "next-frontend/app/(auth)/signup/page.tsx",
+      "language": "typescript",
+      "sizeLines": 37,
+      "fileCategory": "code"
+    },
+    {
+      "path": "next-frontend/app/api/auth/forgot-password/__tests__/route.integration.test.ts",
+      "language": "typescript",
+      "sizeLines": 43,
+      "fileCategory": "code"
+    },
+    {
+      "path": "next-frontend/app/api/auth/forgot-password/route.ts",
+      "language": "typescript",
+      "sizeLines": 21,
+      "fileCategory": "code"
+    },
+    {
+      "path": "next-frontend/app/api/auth/login/__tests__/route.integration.test.ts",
+      "language": "typescript",
+      "sizeLines": 84,
+      "fileCategory": "code"
+    },
+    {
+      "path": "next-frontend/app/api/auth/login/route.ts",
+      "language": "typescript",
+      "sizeLines": 33,
+      "fileCategory": "code"
+    },
+    {
+      "path": "next-frontend/app/api/auth/logout/__tests__/route.integration.test.ts",
+      "language": "typescript",
+      "sizeLines": 57,
+      "fileCategory": "code"
+    },
+    {
+      "path": "next-frontend/app/api/auth/logout/route.ts",
+      "language": "typescript",
+      "sizeLines": 20,
+      "fileCategory": "code"
+    },
+    {
+      "path": "next-frontend/app/api/auth/signup/__tests__/route.integration.test.ts",
+      "language": "typescript",
+      "sizeLines": 56,
+      "fileCategory": "code"
+    },
+    {
+      "path": "next-frontend/app/api/auth/signup/route.ts",
+      "language": "typescript",
+      "sizeLines": 20,
+      "fileCategory": "code"
+    },
+    {
+      "path": "next-frontend/app/globals.css",
+      "language": "css",
+      "sizeLines": 319,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "next-frontend/app/layout.tsx",
+      "language": "typescript",
+      "sizeLines": 51,
+      "fileCategory": "code"
+    },
+    {
+      "path": "next-frontend/app/page.tsx",
+      "language": "typescript",
+      "sizeLines": 65,
+      "fileCategory": "code"
+    },
+    {
+      "path": "next-frontend/CLAUDE.md",
+      "language": "markdown",
+      "sizeLines": 303,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "next-frontend/components.json",
+      "language": "json",
+      "sizeLines": 25,
+      "fileCategory": "config"
+    },
+    {
+      "path": "next-frontend/components/auth/__tests__/back-link.test.tsx",
+      "language": "typescript",
+      "sizeLines": 29,
+      "fileCategory": "code"
+    },
+    {
+      "path": "next-frontend/components/auth/__tests__/forgot-password-form.wiring.test.tsx",
+      "language": "typescript",
+      "sizeLines": 121,
+      "fileCategory": "code"
+    },
+    {
+      "path": "next-frontend/components/auth/__tests__/login-form.wiring.test.tsx",
+      "language": "typescript",
+      "sizeLines": 135,
+      "fileCategory": "code"
+    },
+    {
+      "path": "next-frontend/components/auth/__tests__/password-strength-meter.test.tsx",
+      "language": "typescript",
+      "sizeLines": 45,
+      "fileCategory": "code"
+    },
+    {
+      "path": "next-frontend/components/auth/__tests__/password-visibility-toggle.test.tsx",
+      "language": "typescript",
+      "sizeLines": 44,
+      "fileCategory": "code"
+    },
+    {
+      "path": "next-frontend/components/auth/__tests__/session-provider.test.tsx",
+      "language": "typescript",
+      "sizeLines": 50,
+      "fileCategory": "code"
+    },
+    {
+      "path": "next-frontend/components/auth/__tests__/signup-form.wiring.test.tsx",
+      "language": "typescript",
+      "sizeLines": 114,
+      "fileCategory": "code"
+    },
+    {
+      "path": "next-frontend/components/auth/__tests__/terms-checkbox.test.tsx",
+      "language": "typescript",
+      "sizeLines": 54,
+      "fileCategory": "code"
+    },
+    {
+      "path": "next-frontend/components/auth/auth-footer.tsx",
+      "language": "typescript",
+      "sizeLines": 39,
+      "fileCategory": "code"
+    },
+    {
+      "path": "next-frontend/components/auth/back-link.tsx",
+      "language": "typescript",
+      "sizeLines": 29,
+      "fileCategory": "code"
+    },
+    {
+      "path": "next-frontend/components/auth/brand-logo.tsx",
+      "language": "typescript",
+      "sizeLines": 31,
+      "fileCategory": "code"
+    },
+    {
+      "path": "next-frontend/components/auth/field-error.tsx",
+      "language": "typescript",
+      "sizeLines": 6,
+      "fileCategory": "code"
+    },
+    {
+      "path": "next-frontend/components/auth/forgot-password-form.tsx",
+      "language": "typescript",
+      "sizeLines": 116,
+      "fileCategory": "code"
+    },
+    {
+      "path": "next-frontend/components/auth/login-form.tsx",
+      "language": "typescript",
+      "sizeLines": 133,
+      "fileCategory": "code"
+    },
+    {
+      "path": "next-frontend/components/auth/password-strength-meter.tsx",
+      "language": "typescript",
+      "sizeLines": 72,
+      "fileCategory": "code"
+    },
+    {
+      "path": "next-frontend/components/auth/password-visibility-toggle.tsx",
+      "language": "typescript",
+      "sizeLines": 47,
+      "fileCategory": "code"
+    },
+    {
+      "path": "next-frontend/components/auth/session-provider.tsx",
+      "language": "typescript",
+      "sizeLines": 34,
+      "fileCategory": "code"
+    },
+    {
+      "path": "next-frontend/components/auth/signup-form.tsx",
+      "language": "typescript",
+      "sizeLines": 244,
+      "fileCategory": "code"
+    },
+    {
+      "path": "next-frontend/components/auth/terms-checkbox.tsx",
+      "language": "typescript",
+      "sizeLines": 64,
+      "fileCategory": "code"
+    },
+    {
+      "path": "next-frontend/components/icons/arrow-back-icon.tsx",
+      "language": "typescript",
+      "sizeLines": 23,
+      "fileCategory": "code"
+    },
+    {
+      "path": "next-frontend/components/icons/check-icon.tsx",
+      "language": "typescript",
+      "sizeLines": 23,
+      "fileCategory": "code"
+    },
+    {
+      "path": "next-frontend/components/icons/eye-icon.tsx",
+      "language": "typescript",
+      "sizeLines": 24,
+      "fileCategory": "code"
+    },
+    {
+      "path": "next-frontend/components/icons/eye-off-icon.tsx",
+      "language": "typescript",
+      "sizeLines": 26,
+      "fileCategory": "code"
+    },
+    {
+      "path": "next-frontend/components/icons/streamtube-icon.tsx",
+      "language": "typescript",
+      "sizeLines": 23,
+      "fileCategory": "code"
+    },
+    {
+      "path": "next-frontend/components/ui/__tests__/checkbox.test.tsx",
+      "language": "typescript",
+      "sizeLines": 46,
+      "fileCategory": "code"
+    },
+    {
+      "path": "next-frontend/components/ui/__tests__/icon-button.test.tsx",
+      "language": "typescript",
+      "sizeLines": 57,
+      "fileCategory": "code"
+    },
+    {
+      "path": "next-frontend/components/ui/button.tsx",
+      "language": "typescript",
+      "sizeLines": 71,
+      "fileCategory": "code"
+    },
+    {
+      "path": "next-frontend/components/ui/card.tsx",
+      "language": "typescript",
+      "sizeLines": 103,
+      "fileCategory": "code"
+    },
+    {
+      "path": "next-frontend/components/ui/checkbox.tsx",
+      "language": "typescript",
+      "sizeLines": 33,
+      "fileCategory": "code"
+    },
+    {
+      "path": "next-frontend/components/ui/icon-button.tsx",
+      "language": "typescript",
+      "sizeLines": 60,
+      "fileCategory": "code"
+    },
+    {
+      "path": "next-frontend/components/ui/input.tsx",
+      "language": "typescript",
+      "sizeLines": 19,
+      "fileCategory": "code"
+    },
+    {
+      "path": "next-frontend/components/ui/label.tsx",
+      "language": "typescript",
+      "sizeLines": 24,
+      "fileCategory": "code"
+    },
+    {
+      "path": "next-frontend/compose.yaml",
+      "language": "yaml",
+      "sizeLines": 11,
+      "fileCategory": "infra"
+    },
+    {
+      "path": "next-frontend/Dockerfile.dev",
+      "language": "dockerfile",
+      "sizeLines": 6,
+      "fileCategory": "infra"
+    },
+    {
+      "path": "next-frontend/eslint.config.mjs",
+      "language": "javascript",
+      "sizeLines": 18,
+      "fileCategory": "code"
+    },
+    {
+      "path": "next-frontend/hooks/__tests__/use-session.test.tsx",
+      "language": "typescript",
+      "sizeLines": 43,
+      "fileCategory": "code"
+    },
+    {
+      "path": "next-frontend/hooks/use-session.ts",
+      "language": "typescript",
+      "sizeLines": 9,
+      "fileCategory": "code"
+    },
+    {
+      "path": "next-frontend/instrumentation.ts",
+      "language": "typescript",
+      "sizeLines": 9,
+      "fileCategory": "code"
+    },
+    {
+      "path": "next-frontend/lib/__mocks__/server-only.ts",
+      "language": "typescript",
+      "sizeLines": 2,
+      "fileCategory": "code"
+    },
+    {
+      "path": "next-frontend/lib/api/contracts.ts",
+      "language": "typescript",
+      "sizeLines": 57,
+      "fileCategory": "code"
+    },
+    {
+      "path": "next-frontend/lib/api/types.gen.ts",
+      "language": "typescript",
+      "sizeLines": 593,
+      "fileCategory": "code"
+    },
+    {
+      "path": "next-frontend/lib/api/upstream.ts",
+      "language": "typescript",
+      "sizeLines": 6,
+      "fileCategory": "code"
+    },
+    {
+      "path": "next-frontend/lib/auth/__tests__/refresh.integration.test.ts",
+      "language": "typescript",
+      "sizeLines": 108,
+      "fileCategory": "code"
+    },
+    {
+      "path": "next-frontend/lib/auth/__tests__/session.test.ts",
+      "language": "typescript",
+      "sizeLines": 70,
+      "fileCategory": "code"
+    },
+    {
+      "path": "next-frontend/lib/auth/error-mapping.ts",
+      "language": "typescript",
+      "sizeLines": 85,
+      "fileCategory": "code"
+    },
+    {
+      "path": "next-frontend/lib/auth/refresh.ts",
+      "language": "typescript",
+      "sizeLines": 74,
+      "fileCategory": "code"
+    },
+    {
+      "path": "next-frontend/lib/auth/session.ts",
+      "language": "typescript",
+      "sizeLines": 45,
+      "fileCategory": "code"
+    },
+    {
+      "path": "next-frontend/lib/env.ts",
+      "language": "typescript",
+      "sizeLines": 26,
+      "fileCategory": "code"
+    },
+    {
+      "path": "next-frontend/lib/utils.ts",
+      "language": "typescript",
+      "sizeLines": 32,
+      "fileCategory": "code"
+    },
+    {
+      "path": "next-frontend/mocks/factories/.gitkeep",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "next-frontend/mocks/handlers/_seed.ts",
+      "language": "typescript",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "next-frontend/mocks/handlers/auth.ts",
+      "language": "typescript",
+      "sizeLines": 104,
+      "fileCategory": "code"
+    },
+    {
+      "path": "next-frontend/mocks/handlers/index.ts",
+      "language": "typescript",
+      "sizeLines": 4,
+      "fileCategory": "code"
+    },
+    {
+      "path": "next-frontend/mocks/server.ts",
+      "language": "typescript",
+      "sizeLines": 4,
+      "fileCategory": "code"
+    },
+    {
+      "path": "next-frontend/mocks/setup.ts",
+      "language": "typescript",
+      "sizeLines": 6,
+      "fileCategory": "code"
+    },
+    {
+      "path": "next-frontend/next.config.ts",
+      "language": "typescript",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "next-frontend/package.json",
+      "language": "json",
+      "sizeLines": 52,
+      "fileCategory": "config"
+    },
+    {
+      "path": "next-frontend/playwright-report/index.html",
+      "language": "html",
+      "sizeLines": 89,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "next-frontend/playwright.config.ts",
+      "language": "typescript",
+      "sizeLines": 24,
+      "fileCategory": "code"
+    },
+    {
+      "path": "next-frontend/postcss.config.mjs",
+      "language": "javascript",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "next-frontend/README.md",
+      "language": "markdown",
+      "sizeLines": 36,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "next-frontend/specs/forgot-password.plan.md",
+      "language": "markdown",
+      "sizeLines": 61,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "next-frontend/specs/login.plan.md",
+      "language": "markdown",
+      "sizeLines": 65,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "next-frontend/specs/signup.plan.md",
+      "language": "markdown",
+      "sizeLines": 64,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "next-frontend/test-results/.last-run.json",
+      "language": "json",
+      "sizeLines": 3,
+      "fileCategory": "config"
+    },
+    {
+      "path": "next-frontend/tests/auth-forgot-password.e2e-spec.ts",
+      "language": "typescript",
+      "sizeLines": 89,
+      "fileCategory": "code"
+    },
+    {
+      "path": "next-frontend/tests/auth-login.e2e-spec.ts",
+      "language": "typescript",
+      "sizeLines": 113,
+      "fileCategory": "code"
+    },
+    {
+      "path": "next-frontend/tests/auth-signup.e2e-spec.ts",
+      "language": "typescript",
+      "sizeLines": 105,
+      "fileCategory": "code"
+    },
+    {
+      "path": "next-frontend/tests/fixtures.ts",
+      "language": "typescript",
+      "sizeLines": 18,
+      "fileCategory": "code"
+    },
+    {
+      "path": "next-frontend/tsconfig.json",
+      "language": "json",
+      "sizeLines": 34,
+      "fileCategory": "config"
+    },
+    {
+      "path": "next-frontend/vitest.config.ts",
+      "language": "typescript",
+      "sizeLines": 17,
+      "fileCategory": "code"
+    },
+    {
+      "path": "next-frontend/vitest.setup.ts",
+      "language": "typescript",
+      "sizeLines": 21,
+      "fileCategory": "code"
+    },
+    {
+      "path": "README.md",
+      "language": "markdown",
+      "sizeLines": 216,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "scripts/sync-openapi.sh",
+      "language": "shell",
+      "sizeLines": 5,
+      "fileCategory": "script"
+    },
+    {
+      "path": "skills-lock.json",
+      "language": "json",
+      "sizeLines": 33,
+      "fileCategory": "config"
+    }
+  ],
+  "totalFiles": 507,
+  "filteredByIgnore": 0,
+  "estimatedComplexity": "very-large",
+  "importMap": {
+    "_claude-sessions/01-correcao-contradicoes-rules-vs-skills.txt": [],
+    "_claude-sessions/02-planejamento-de-implementacao-fase01.txt": [],
+    "_claude-sessions/03-atualizacao-claude-md-info-docker.txt": [],
+    "_claude-sessions/04-simpilfy-fase01.txt": [],
+    "_claude-sessions/05-git-commit-fase01-e-claude.md.txt": [],
+    "_claude-sessions/06-atualizando-skill-plan-impl-detalhes-obscuros.txt": [],
+    "_claude-sessions/07-atualizando-skill-plan-boas-praticas-rest.txt": [],
+    "_claude-sessions/08-fase02-correcoes-01.txt": [],
+    "_claude-sessions/09-fase02-correcoes-02.txt": [],
+    "_claude-sessions/10-melhorias-na-fundacao-ia.txt": [],
+    "_claude-sessions/11-criando-design-system-rules.txt": [],
+    "_claude-sessions/12-adaptacao-docs-phases-e-td-existentes.txt": [],
+    "_claude-sessions/13-criando-fundacao-ia-nextjs-e-atualizando-a-do-nestjs.txt": [],
+    ".claude/agents/decisions-correlator.md": [],
+    ".claude/agents/decisions-detail-reader.md": [],
+    ".claude/agents/decisions-reader.md": [],
+    ".claude/agents/inventory-digest-reader.md": [],
+    ".claude/agents/phases-reader.md": [],
+    ".claude/agents/plan-reader.md": [],
+    ".claude/rules/auth-jwt.md": [],
+    ".claude/rules/nestjs-common-conventions.md": [],
+    ".claude/rules/nestjs-controllers.md": [],
+    ".claude/rules/nestjs-dtos.md": [],
+    ".claude/rules/nestjs-entities.md": [],
+    ".claude/rules/nestjs-layer-separation.md": [],
+    ".claude/rules/nestjs-modules.md": [],
+    ".claude/rules/nestjs-services.md": [],
+    ".claude/rules/nestjs-testing.md": [],
+    ".claude/rules/next-frontend-bff-api.md": [],
+    ".claude/rules/next-frontend-code-quality.md": [],
+    ".claude/rules/next-frontend-msw-mocks.md": [],
+    ".claude/rules/next-frontend-testing.md": [],
+    ".claude/rules/next-frontend-ui.md": [],
+    ".claude/rules/typeorm-migrations.md": [],
+    ".claude/rules/typeorm-queries.md": [],
+    ".claude/rules/typescript-strict.md": [],
+    ".claude/settings.json": [],
+    ".claude/skills/decide/SKILL.md": [],
+    ".claude/skills/figma-apply-tokens-tailwind-v4/scripts/apply.py": [],
+    ".claude/skills/figma-apply-tokens-tailwind-v4/SKILL.md": [],
+    ".claude/skills/figma-audit-tokens/SKILL.md": [],
+    ".claude/skills/generate-test-guide/SKILL.md": [],
+    ".claude/skills/generate-test-guide/testing-fundamentals.md": [],
+    ".claude/skills/implement-phase/SKILL.md": [],
+    ".claude/skills/implement/SKILL.md": [],
+    ".claude/skills/nestjs-best-practices/rules/_sections.md": [],
+    ".claude/skills/nestjs-best-practices/rules/_template.md": [],
+    ".claude/skills/nestjs-best-practices/rules/api-use-dto-serialization.md": [],
+    ".claude/skills/nestjs-best-practices/rules/api-use-interceptors.md": [],
+    ".claude/skills/nestjs-best-practices/rules/api-use-pipes.md": [],
+    ".claude/skills/nestjs-best-practices/rules/api-versioning.md": [],
+    ".claude/skills/nestjs-best-practices/rules/arch-avoid-circular-deps.md": [],
+    ".claude/skills/nestjs-best-practices/rules/arch-feature-modules.md": [],
+    ".claude/skills/nestjs-best-practices/rules/arch-module-sharing.md": [],
+    ".claude/skills/nestjs-best-practices/rules/arch-single-responsibility.md": [],
+    ".claude/skills/nestjs-best-practices/rules/arch-use-events.md": [],
+    ".claude/skills/nestjs-best-practices/rules/arch-use-repository-pattern.md": [],
+    ".claude/skills/nestjs-best-practices/rules/db-avoid-n-plus-one.md": [],
+    ".claude/skills/nestjs-best-practices/rules/db-use-migrations.md": [],
+    ".claude/skills/nestjs-best-practices/rules/db-use-transactions.md": [],
+    ".claude/skills/nestjs-best-practices/rules/devops-graceful-shutdown.md": [],
+    ".claude/skills/nestjs-best-practices/rules/devops-use-config-module.md": [],
+    ".claude/skills/nestjs-best-practices/rules/devops-use-logging.md": [],
+    ".claude/skills/nestjs-best-practices/rules/di-avoid-service-locator.md": [],
+    ".claude/skills/nestjs-best-practices/rules/di-interface-segregation.md": [],
+    ".claude/skills/nestjs-best-practices/rules/di-liskov-substitution.md": [],
+    ".claude/skills/nestjs-best-practices/rules/di-prefer-constructor-injection.md": [],
+    ".claude/skills/nestjs-best-practices/rules/di-scope-awareness.md": [],
+    ".claude/skills/nestjs-best-practices/rules/di-use-interfaces-tokens.md": [],
+    ".claude/skills/nestjs-best-practices/rules/error-handle-async-errors.md": [],
+    ".claude/skills/nestjs-best-practices/rules/error-throw-http-exceptions.md": [],
+    ".claude/skills/nestjs-best-practices/rules/error-use-exception-filters.md": [],
+    ".claude/skills/nestjs-best-practices/rules/micro-use-health-checks.md": [],
+    ".claude/skills/nestjs-best-practices/rules/micro-use-patterns.md": [],
+    ".claude/skills/nestjs-best-practices/rules/micro-use-queues.md": [],
+    ".claude/skills/nestjs-best-practices/rules/perf-async-hooks.md": [],
+    ".claude/skills/nestjs-best-practices/rules/perf-lazy-loading.md": [],
+    ".claude/skills/nestjs-best-practices/rules/perf-optimize-database.md": [],
+    ".claude/skills/nestjs-best-practices/rules/perf-use-caching.md": [],
+    ".claude/skills/nestjs-best-practices/rules/security-auth-jwt.md": [],
+    ".claude/skills/nestjs-best-practices/rules/security-rate-limiting.md": [],
+    ".claude/skills/nestjs-best-practices/rules/security-sanitize-output.md": [],
+    ".claude/skills/nestjs-best-practices/rules/security-use-guards.md": [],
+    ".claude/skills/nestjs-best-practices/rules/security-validate-all-input.md": [],
+    ".claude/skills/nestjs-best-practices/rules/test-e2e-supertest.md": [],
+    ".claude/skills/nestjs-best-practices/rules/test-mock-external-services.md": [],
+    ".claude/skills/nestjs-best-practices/rules/test-use-testing-module.md": [],
+    ".claude/skills/nestjs-best-practices/SKILL.md": [],
+    ".claude/skills/next-best-practices/async-patterns.md": [],
+    ".claude/skills/next-best-practices/bundling.md": [],
+    ".claude/skills/next-best-practices/data-patterns.md": [],
+    ".claude/skills/next-best-practices/debug-tricks.md": [],
+    ".claude/skills/next-best-practices/directives.md": [],
+    ".claude/skills/next-best-practices/error-handling.md": [],
+    ".claude/skills/next-best-practices/file-conventions.md": [],
+    ".claude/skills/next-best-practices/font.md": [],
+    ".claude/skills/next-best-practices/functions.md": [],
+    ".claude/skills/next-best-practices/hydration-error.md": [],
+    ".claude/skills/next-best-practices/image.md": [],
+    ".claude/skills/next-best-practices/metadata.md": [],
+    ".claude/skills/next-best-practices/parallel-routes.md": [],
+    ".claude/skills/next-best-practices/route-handlers.md": [],
+    ".claude/skills/next-best-practices/rsc-boundaries.md": [],
+    ".claude/skills/next-best-practices/runtime-selection.md": [],
+    ".claude/skills/next-best-practices/scripts.md": [],
+    ".claude/skills/next-best-practices/self-hosting.md": [],
+    ".claude/skills/next-best-practices/SKILL.md": [],
+    ".claude/skills/next-best-practices/suspense-boundaries.md": [],
+    ".claude/skills/plan-build/phase-a.md": [],
+    ".claude/skills/plan-build/phase-b.md": [],
+    ".claude/skills/plan-build/phase-c.md": [],
+    ".claude/skills/plan-build/references/frontend-drift-report-schema.md": [],
+    ".claude/skills/plan-build/SKILL.md": [],
+    ".claude/skills/plan-build/templates/frontend-runtime-si.md": [],
+    ".claude/skills/plan-build/templates/screen-si.md": [],
+    ".claude/skills/plan-build/templates/tech-specs/api-contracts.md": [],
+    ".claude/skills/plan-build/templates/tech-specs/auth-matrix.md": [],
+    ".claude/skills/plan-build/templates/tech-specs/data-model.md": [],
+    ".claude/skills/plan-build/templates/tech-specs/error-catalog.md": [],
+    ".claude/skills/plan-build/templates/tech-specs/events-messages.md": [],
+    ".claude/skills/plan-build/templates/tech-specs/frontend-runtime.md": [],
+    ".claude/skills/plan-build/templates/tech-specs/traceability-matrix.md": [],
+    ".claude/skills/plan-build/templates/tech-specs/ui-contracts.md": [],
+    ".claude/skills/plan-context/SKILL.md": [],
+    ".claude/skills/plan-phase/SKILL.md": [],
+    ".claude/skills/plan-pipeline/SKILL.md": [],
+    ".claude/skills/plan-pipeline/slicing-implementation-plan.md": [],
+    ".claude/skills/plan-resolve/SKILL.md": [],
+    ".claude/skills/plan-rule-author/SKILL.md": [],
+    ".claude/skills/plan-test-specs/SKILL.md": [],
+    ".claude/skills/plan-validate/SKILL.md": [],
+    ".claude/skills/playwright-cli/references/element-attributes.md": [],
+    ".claude/skills/playwright-cli/references/playwright-tests.md": [],
+    ".claude/skills/playwright-cli/references/request-mocking.md": [],
+    ".claude/skills/playwright-cli/references/running-code.md": [],
+    ".claude/skills/playwright-cli/references/session-management.md": [],
+    ".claude/skills/playwright-cli/references/spec-driven-testing.md": [],
+    ".claude/skills/playwright-cli/references/storage-state.md": [],
+    ".claude/skills/playwright-cli/references/test-generation.md": [],
+    ".claude/skills/playwright-cli/references/tracing.md": [],
+    ".claude/skills/playwright-cli/references/video-recording.md": [],
+    ".claude/skills/playwright-cli/SKILL.md": [],
+    ".claude/skills/research/SKILL.md": [],
+    ".claude/skills/screen-inventory/SKILL.md": [],
+    ".claude/skills/testing-guide-nestjs-project/artifacts/controllers.md": [],
+    ".claude/skills/testing-guide-nestjs-project/artifacts/dtos.md": [],
+    ".claude/skills/testing-guide-nestjs-project/artifacts/entities.md": [],
+    ".claude/skills/testing-guide-nestjs-project/artifacts/filters.md": [],
+    ".claude/skills/testing-guide-nestjs-project/artifacts/future-types.md": [],
+    ".claude/skills/testing-guide-nestjs-project/artifacts/guards.md": [],
+    ".claude/skills/testing-guide-nestjs-project/artifacts/interceptors.md": [],
+    ".claude/skills/testing-guide-nestjs-project/artifacts/middleware.md": [],
+    ".claude/skills/testing-guide-nestjs-project/artifacts/modules.md": [],
+    ".claude/skills/testing-guide-nestjs-project/artifacts/pipes.md": [],
+    ".claude/skills/testing-guide-nestjs-project/artifacts/services.md": [],
+    ".claude/skills/testing-guide-nestjs-project/artifacts/strategies.md": [],
+    ".claude/skills/testing-guide-nestjs-project/references/external-systems.md": [],
+    ".claude/skills/testing-guide-nestjs-project/references/file-conventions.md": [],
+    ".claude/skills/testing-guide-nestjs-project/references/gotchas.md": [],
+    ".claude/skills/testing-guide-nestjs-project/references/mock-health-rules.md": [],
+    ".claude/skills/testing-guide-nestjs-project/SKILL.md": [],
+    ".claude/skills/testing-guide-next-frontend/artifacts/client-components.md": [],
+    ".claude/skills/testing-guide-next-frontend/artifacts/feature-components.md": [],
+    ".claude/skills/testing-guide-next-frontend/artifacts/future-types.md": [],
+    ".claude/skills/testing-guide-next-frontend/artifacts/hooks.md": [],
+    ".claude/skills/testing-guide-next-frontend/artifacts/icons.md": [],
+    ".claude/skills/testing-guide-next-frontend/artifacts/layouts.md": [],
+    ".claude/skills/testing-guide-next-frontend/artifacts/pages.md": [],
+    ".claude/skills/testing-guide-next-frontend/artifacts/route-handlers.md": [],
+    ".claude/skills/testing-guide-next-frontend/artifacts/ui-primitives.md": [],
+    ".claude/skills/testing-guide-next-frontend/artifacts/utilities.md": [],
+    ".claude/skills/testing-guide-next-frontend/references/external-systems.md": [],
+    ".claude/skills/testing-guide-next-frontend/references/file-conventions.md": [],
+    ".claude/skills/testing-guide-next-frontend/references/gotchas.md": [],
+    ".claude/skills/testing-guide-next-frontend/references/mock-health-rules.md": [],
+    ".claude/skills/testing-guide-next-frontend/SKILL.md": [],
+    ".claude/skills/typeorm/rules/_sections.md": [],
+    ".claude/skills/typeorm/rules/_template.md": [],
+    ".claude/skills/typeorm/rules/config-datasource-setup.md": [],
+    ".claude/skills/typeorm/rules/config-typescript-settings.md": [],
+    ".claude/skills/typeorm/rules/conv-eager-lazy-loading.md": [],
+    ".claude/skills/typeorm/rules/conv-indexes-naming-cascades.md": [],
+    ".claude/skills/typeorm/rules/entity-column-types.md": [],
+    ".claude/skills/typeorm/rules/entity-define-proper-structure.md": [],
+    ".claude/skills/typeorm/rules/entity-primary-key-strategy.md": [],
+    ".claude/skills/typeorm/rules/integ-nestjs-setup.md": [],
+    ".claude/skills/typeorm/rules/migration-file-structure.md": [],
+    ".claude/skills/typeorm/rules/migration-workflow.md": [],
+    ".claude/skills/typeorm/rules/query-builder-and-n-plus-one.md": [],
+    ".claude/skills/typeorm/rules/query-custom-repository.md": [],
+    ".claude/skills/typeorm/rules/query-repository-basics.md": [],
+    ".claude/skills/typeorm/rules/rel-many-to-many.md": [],
+    ".claude/skills/typeorm/rules/rel-one-to-one-and-many.md": [],
+    ".claude/skills/typeorm/rules/tx-use-transactions.md": [],
+    ".claude/skills/typeorm/SKILL.md": [],
+    ".claude/skills/vercel-react-best-practices/rules/_sections.md": [],
+    ".claude/skills/vercel-react-best-practices/rules/_template.md": [],
+    ".claude/skills/vercel-react-best-practices/rules/advanced-effect-event-deps.md": [],
+    ".claude/skills/vercel-react-best-practices/rules/advanced-event-handler-refs.md": [],
+    ".claude/skills/vercel-react-best-practices/rules/advanced-init-once.md": [],
+    ".claude/skills/vercel-react-best-practices/rules/advanced-use-latest.md": [],
+    ".claude/skills/vercel-react-best-practices/rules/async-api-routes.md": [],
+    ".claude/skills/vercel-react-best-practices/rules/async-cheap-condition-before-await.md": [],
+    ".claude/skills/vercel-react-best-practices/rules/async-defer-await.md": [],
+    ".claude/skills/vercel-react-best-practices/rules/async-dependencies.md": [],
+    ".claude/skills/vercel-react-best-practices/rules/async-parallel.md": [],
+    ".claude/skills/vercel-react-best-practices/rules/async-suspense-boundaries.md": [],
+    ".claude/skills/vercel-react-best-practices/rules/bundle-analyzable-paths.md": [],
+    ".claude/skills/vercel-react-best-practices/rules/bundle-barrel-imports.md": [],
+    ".claude/skills/vercel-react-best-practices/rules/bundle-conditional.md": [],
+    ".claude/skills/vercel-react-best-practices/rules/bundle-defer-third-party.md": [],
+    ".claude/skills/vercel-react-best-practices/rules/bundle-dynamic-imports.md": [],
+    ".claude/skills/vercel-react-best-practices/rules/bundle-preload.md": [],
+    ".claude/skills/vercel-react-best-practices/rules/client-event-listeners.md": [],
+    ".claude/skills/vercel-react-best-practices/rules/client-localstorage-schema.md": [],
+    ".claude/skills/vercel-react-best-practices/rules/client-passive-event-listeners.md": [],
+    ".claude/skills/vercel-react-best-practices/rules/client-swr-dedup.md": [],
+    ".claude/skills/vercel-react-best-practices/rules/js-batch-dom-css.md": [],
+    ".claude/skills/vercel-react-best-practices/rules/js-cache-function-results.md": [],
+    ".claude/skills/vercel-react-best-practices/rules/js-cache-property-access.md": [],
+    ".claude/skills/vercel-react-best-practices/rules/js-cache-storage.md": [],
+    ".claude/skills/vercel-react-best-practices/rules/js-combine-iterations.md": [],
+    ".claude/skills/vercel-react-best-practices/rules/js-early-exit.md": [],
+    ".claude/skills/vercel-react-best-practices/rules/js-flatmap-filter.md": [],
+    ".claude/skills/vercel-react-best-practices/rules/js-hoist-regexp.md": [],
+    ".claude/skills/vercel-react-best-practices/rules/js-index-maps.md": [],
+    ".claude/skills/vercel-react-best-practices/rules/js-length-check-first.md": [],
+    ".claude/skills/vercel-react-best-practices/rules/js-min-max-loop.md": [],
+    ".claude/skills/vercel-react-best-practices/rules/js-request-idle-callback.md": [],
+    ".claude/skills/vercel-react-best-practices/rules/js-set-map-lookups.md": [],
+    ".claude/skills/vercel-react-best-practices/rules/js-tosorted-immutable.md": [],
+    ".claude/skills/vercel-react-best-practices/rules/rendering-activity.md": [],
+    ".claude/skills/vercel-react-best-practices/rules/rendering-animate-svg-wrapper.md": [],
+    ".claude/skills/vercel-react-best-practices/rules/rendering-conditional-render.md": [],
+    ".claude/skills/vercel-react-best-practices/rules/rendering-content-visibility.md": [],
+    ".claude/skills/vercel-react-best-practices/rules/rendering-hoist-jsx.md": [],
+    ".claude/skills/vercel-react-best-practices/rules/rendering-hydration-no-flicker.md": [],
+    ".claude/skills/vercel-react-best-practices/rules/rendering-hydration-suppress-warning.md": [],
+    ".claude/skills/vercel-react-best-practices/rules/rendering-resource-hints.md": [],
+    ".claude/skills/vercel-react-best-practices/rules/rendering-script-defer-async.md": [],
+    ".claude/skills/vercel-react-best-practices/rules/rendering-svg-precision.md": [],
+    ".claude/skills/vercel-react-best-practices/rules/rendering-usetransition-loading.md": [],
+    ".claude/skills/vercel-react-best-practices/rules/rerender-defer-reads.md": [],
+    ".claude/skills/vercel-react-best-practices/rules/rerender-dependencies.md": [],
+    ".claude/skills/vercel-react-best-practices/rules/rerender-derived-state-no-effect.md": [],
+    ".claude/skills/vercel-react-best-practices/rules/rerender-derived-state.md": [],
+    ".claude/skills/vercel-react-best-practices/rules/rerender-functional-setstate.md": [],
+    ".claude/skills/vercel-react-best-practices/rules/rerender-lazy-state-init.md": [],
+    ".claude/skills/vercel-react-best-practices/rules/rerender-memo-with-default-value.md": [],
+    ".claude/skills/vercel-react-best-practices/rules/rerender-memo.md": [],
+    ".claude/skills/vercel-react-best-practices/rules/rerender-move-effect-to-event.md": [],
+    ".claude/skills/vercel-react-best-practices/rules/rerender-no-inline-components.md": [],
+    ".claude/skills/vercel-react-best-practices/rules/rerender-simple-expression-in-memo.md": [],
+    ".claude/skills/vercel-react-best-practices/rules/rerender-split-combined-hooks.md": [],
+    ".claude/skills/vercel-react-best-practices/rules/rerender-transitions.md": [],
+    ".claude/skills/vercel-react-best-practices/rules/rerender-use-deferred-value.md": [],
+    ".claude/skills/vercel-react-best-practices/rules/rerender-use-ref-transient-values.md": [],
+    ".claude/skills/vercel-react-best-practices/rules/server-after-nonblocking.md": [],
+    ".claude/skills/vercel-react-best-practices/rules/server-auth-actions.md": [],
+    ".claude/skills/vercel-react-best-practices/rules/server-cache-lru.md": [],
+    ".claude/skills/vercel-react-best-practices/rules/server-cache-react.md": [],
+    ".claude/skills/vercel-react-best-practices/rules/server-dedup-props.md": [],
+    ".claude/skills/vercel-react-best-practices/rules/server-hoist-static-io.md": [],
+    ".claude/skills/vercel-react-best-practices/rules/server-no-shared-module-state.md": [],
+    ".claude/skills/vercel-react-best-practices/rules/server-parallel-fetching.md": [],
+    ".claude/skills/vercel-react-best-practices/rules/server-parallel-nested-fetching.md": [],
+    ".claude/skills/vercel-react-best-practices/rules/server-serialization.md": [],
+    ".claude/skills/vercel-react-best-practices/SKILL.md": [],
+    ".mcp.json": [],
+    ".mcp.json.example": [],
+    ".understand-anything/.understandignore": [],
+    "CLAUDE.md": [],
+    "docs/decisions/technical-decisions-next-frontend-config-base.md": [],
+    "docs/decisions/technical-decisions-next-frontend-msw-foundation.md": [],
+    "docs/decisions/technical-decisions-next-frontend-openapi-typing.md": [],
+    "docs/decisions/technical-decisions-openapi-docs-nestjs.md": [],
+    "docs/decisions/technical-decisions-phase-01-configuracao-base.md": [],
+    "docs/decisions/technical-decisions-phase-02-auth-frontend.md": [],
+    "docs/decisions/technical-decisions-phase-02-auth.md": [],
+    "docs/design-system-ai-implementable.md": [],
+    "docs/design-system-pillars.md": [],
+    "docs/diagrams/skill-implement-phase.mermaid": [],
+    "docs/diagrams/skill-plan-phase.mermaid": [],
+    "docs/diagrams/skill-research.mermaid": [],
+    "docs/diagrams/skills-workflow.mermaid": [],
+    "docs/diagrams/software-arch.mermaid": [],
+    "docs/figma-audit.json": [],
+    "docs/inventories/screen-inventory-phase-02-auth-frontend.md": [],
+    "docs/inventories/screen-inventory-phase-02-auth-frontend.progress.md": [],
+    "docs/phases/phase-01-configuracao-base/context.md": [],
+    "docs/phases/phase-01-configuracao-base/phase-01-configuracao-base.md": [],
+    "docs/phases/phase-01-configuracao-base/progress.md": [],
+    "docs/phases/phase-01-configuracao-base/validation.md": [],
+    "docs/phases/phase-02-auth-frontend/context.md": [],
+    "docs/phases/phase-02-auth-frontend/frontend-drift-report.md": [],
+    "docs/phases/phase-02-auth-frontend/library-refs.md": [],
+    "docs/phases/phase-02-auth-frontend/phase-02-auth-frontend.md": [],
+    "docs/phases/phase-02-auth-frontend/progress.md": [],
+    "docs/phases/phase-02-auth-frontend/validation.md": [],
+    "docs/phases/phase-02-auth/context.md": [],
+    "docs/phases/phase-02-auth/phase-02-auth.md": [],
+    "docs/phases/phase-02-auth/progress.md": [],
+    "docs/phases/phase-02-auth/validation.md": [],
+    "docs/project-plan.md": [],
+    "docs/tasks/task-next-frontend-config-base/context.md": [],
+    "docs/tasks/task-next-frontend-config-base/library-refs.md": [],
+    "docs/tasks/task-next-frontend-config-base/progress.md": [],
+    "docs/tasks/task-next-frontend-config-base/task-next-frontend-config-base.md": [],
+    "docs/tasks/task-next-frontend-config-base/validation.md": [],
+    "docs/tasks/task-next-frontend-msw-foundation/context.md": [],
+    "docs/tasks/task-next-frontend-msw-foundation/progress.md": [],
+    "docs/tasks/task-next-frontend-msw-foundation/task-next-frontend-msw-foundation.md": [],
+    "docs/tasks/task-next-frontend-msw-foundation/validation.md": [],
+    "docs/tasks/task-next-frontend-openapi-typing/context.md": [],
+    "docs/tasks/task-next-frontend-openapi-typing/library-refs.md": [],
+    "docs/tasks/task-next-frontend-openapi-typing/progress.md": [],
+    "docs/tasks/task-next-frontend-openapi-typing/task-next-frontend-openapi-typing.md": [],
+    "docs/tasks/task-next-frontend-openapi-typing/validation.md": [],
+    "docs/tasks/task-openapi-docs-nestjs/context.md": [],
+    "docs/tasks/task-openapi-docs-nestjs/library-refs.md": [],
+    "docs/tasks/task-openapi-docs-nestjs/progress.md": [],
+    "docs/tasks/task-openapi-docs-nestjs/task-openapi-docs-nestjs.md": [],
+    "docs/tasks/task-openapi-docs-nestjs/validation.md": [],
+    "FC Tube.fig": [],
+    "mcp.example.py": [],
+    "nestjs-project/.env.example": [],
+    "nestjs-project/api.http": [],
+    "nestjs-project/CLAUDE.md": [],
+    "nestjs-project/compose.yaml": [],
+    "nestjs-project/Dockerfile.dev": [],
+    "nestjs-project/eslint.config.mjs": [],
+    "nestjs-project/nest-cli.json": [],
+    "nestjs-project/openapi.json": [],
+    "nestjs-project/package.json": [],
+    "nestjs-project/README.md": [],
+    "nestjs-project/src/app.controller.spec.ts": [
+      "nestjs-project/src/app.controller.ts",
+      "nestjs-project/src/app.service.ts"
+    ],
+    "nestjs-project/src/app.controller.ts": [
+      "nestjs-project/src/app.service.ts",
+      "nestjs-project/src/auth/decorators/public.decorator.ts"
+    ],
+    "nestjs-project/src/app.module.ts": [
+      "nestjs-project/src/app.controller.ts",
+      "nestjs-project/src/app.service.ts",
+      "nestjs-project/src/auth/auth.module.ts",
+      "nestjs-project/src/config/app.config.ts",
+      "nestjs-project/src/config/auth.config.ts",
+      "nestjs-project/src/config/database.config.ts",
+      "nestjs-project/src/config/env.validation.ts",
+      "nestjs-project/src/config/mail.config.ts",
+      "nestjs-project/src/config/swagger.config.ts"
+    ],
+    "nestjs-project/src/app.service.ts": [],
+    "nestjs-project/src/auth/auth.constants.ts": [],
+    "nestjs-project/src/auth/auth.controller.ts": [
+      "nestjs-project/src/auth/auth.service.ts",
+      "nestjs-project/src/auth/auth.types.ts",
+      "nestjs-project/src/auth/decorators/current-user.decorator.ts",
+      "nestjs-project/src/auth/decorators/public.decorator.ts",
+      "nestjs-project/src/auth/dto/confirm-email.dto.ts",
+      "nestjs-project/src/auth/dto/forgot-password.dto.ts",
+      "nestjs-project/src/auth/dto/login.dto.ts",
+      "nestjs-project/src/auth/dto/refresh-token.dto.ts",
+      "nestjs-project/src/auth/dto/register.dto.ts",
+      "nestjs-project/src/auth/dto/resend-confirmation.dto.ts",
+      "nestjs-project/src/auth/dto/reset-password.dto.ts",
+      "nestjs-project/src/common/openapi/api-error-envelope.dto.ts"
+    ],
+    "nestjs-project/src/auth/auth.module.spec.ts": [
+      "nestjs-project/src/auth/auth.module.ts",
+      "nestjs-project/src/auth/entities/refresh-token.entity.ts",
+      "nestjs-project/src/auth/entities/verification-token.entity.ts",
+      "nestjs-project/src/channels/entities/channel.entity.ts",
+      "nestjs-project/src/config/app.config.ts",
+      "nestjs-project/src/config/auth.config.ts",
+      "nestjs-project/src/config/mail.config.ts",
+      "nestjs-project/src/test/create-test-data-source.ts",
+      "nestjs-project/src/users/entities/user.entity.ts"
+    ],
+    "nestjs-project/src/auth/auth.module.ts": [
+      "nestjs-project/src/auth/auth.controller.ts",
+      "nestjs-project/src/auth/auth.service.ts",
+      "nestjs-project/src/auth/entities/refresh-token.entity.ts",
+      "nestjs-project/src/auth/entities/verification-token.entity.ts",
+      "nestjs-project/src/auth/guards/jwt-auth.guard.ts",
+      "nestjs-project/src/config/auth.config.ts",
+      "nestjs-project/src/mail/mail.module.ts",
+      "nestjs-project/src/users/users.module.ts"
+    ],
+    "nestjs-project/src/auth/auth.service.integration-spec.ts": [
+      "nestjs-project/src/auth/auth.service.ts",
+      "nestjs-project/src/auth/entities/refresh-token.entity.ts",
+      "nestjs-project/src/auth/entities/verification-token.entity.ts",
+      "nestjs-project/src/channels/entities/channel.entity.ts",
+      "nestjs-project/src/common/exceptions/domain.exception.ts",
+      "nestjs-project/src/config/app.config.ts",
+      "nestjs-project/src/config/auth.config.ts",
+      "nestjs-project/src/config/mail.config.ts",
+      "nestjs-project/src/mail/mail.module.ts",
+      "nestjs-project/src/test/create-test-data-source.ts",
+      "nestjs-project/src/test/mailpit.ts",
+      "nestjs-project/src/users/entities/user.entity.ts",
+      "nestjs-project/src/users/users.module.ts"
+    ],
+    "nestjs-project/src/auth/auth.service.spec.ts": [
+      "nestjs-project/src/auth/auth.service.ts",
+      "nestjs-project/src/auth/entities/refresh-token.entity.ts",
+      "nestjs-project/src/auth/entities/verification-token.entity.ts",
+      "nestjs-project/src/common/exceptions/domain.exception.ts",
+      "nestjs-project/src/config/auth.config.ts",
+      "nestjs-project/src/mail/mail.service.ts",
+      "nestjs-project/src/users/users.service.ts"
+    ],
+    "nestjs-project/src/auth/auth.service.ts": [
+      "nestjs-project/src/auth/auth.constants.ts",
+      "nestjs-project/src/auth/dto/login.dto.ts",
+      "nestjs-project/src/auth/dto/register.dto.ts",
+      "nestjs-project/src/auth/entities/refresh-token.entity.ts",
+      "nestjs-project/src/auth/entities/verification-token.entity.ts",
+      "nestjs-project/src/common/exceptions/domain.exception.ts",
+      "nestjs-project/src/config/auth.config.ts",
+      "nestjs-project/src/mail/mail.service.ts",
+      "nestjs-project/src/users/users.service.ts"
+    ],
+    "nestjs-project/src/auth/auth.types.ts": [],
+    "nestjs-project/src/auth/decorators/current-user.decorator.ts": [
+      "nestjs-project/src/auth/auth.types.ts"
+    ],
+    "nestjs-project/src/auth/decorators/public.decorator.ts": [],
+    "nestjs-project/src/auth/dto/confirm-email.dto.ts": [],
+    "nestjs-project/src/auth/dto/forgot-password.dto.ts": [],
+    "nestjs-project/src/auth/dto/login.dto.ts": [],
+    "nestjs-project/src/auth/dto/refresh-token.dto.ts": [],
+    "nestjs-project/src/auth/dto/register.dto.ts": [],
+    "nestjs-project/src/auth/dto/resend-confirmation.dto.ts": [],
+    "nestjs-project/src/auth/dto/reset-password.dto.ts": [],
+    "nestjs-project/src/auth/entities/refresh-token.entity.integration-spec.ts": [
+      "nestjs-project/src/auth/entities/refresh-token.entity.ts",
+      "nestjs-project/src/auth/entities/verification-token.entity.ts",
+      "nestjs-project/src/channels/entities/channel.entity.ts",
+      "nestjs-project/src/test/create-test-data-source.ts",
+      "nestjs-project/src/users/entities/user.entity.ts"
+    ],
+    "nestjs-project/src/auth/entities/refresh-token.entity.ts": [
+      "nestjs-project/src/users/entities/user.entity.ts"
+    ],
+    "nestjs-project/src/auth/entities/verification-token.entity.integration-spec.ts": [
+      "nestjs-project/src/auth/entities/refresh-token.entity.ts",
+      "nestjs-project/src/auth/entities/verification-token.entity.ts",
+      "nestjs-project/src/channels/entities/channel.entity.ts",
+      "nestjs-project/src/test/create-test-data-source.ts",
+      "nestjs-project/src/users/entities/user.entity.ts"
+    ],
+    "nestjs-project/src/auth/entities/verification-token.entity.ts": [
+      "nestjs-project/src/users/entities/user.entity.ts"
+    ],
+    "nestjs-project/src/auth/guards/jwt-auth.guard.spec.ts": [
+      "nestjs-project/src/auth/guards/jwt-auth.guard.ts"
+    ],
+    "nestjs-project/src/auth/guards/jwt-auth.guard.ts": [
+      "nestjs-project/src/auth/auth.constants.ts",
+      "nestjs-project/src/auth/auth.types.ts",
+      "nestjs-project/src/auth/decorators/public.decorator.ts"
+    ],
+    "nestjs-project/src/channels/channels.module.spec.ts": [
+      "nestjs-project/src/auth/entities/refresh-token.entity.ts",
+      "nestjs-project/src/auth/entities/verification-token.entity.ts",
+      "nestjs-project/src/channels/channels.module.ts",
+      "nestjs-project/src/channels/entities/channel.entity.ts",
+      "nestjs-project/src/test/create-test-data-source.ts",
+      "nestjs-project/src/users/entities/user.entity.ts"
+    ],
+    "nestjs-project/src/channels/channels.module.ts": [
+      "nestjs-project/src/channels/channels.service.ts",
+      "nestjs-project/src/channels/entities/channel.entity.ts"
+    ],
+    "nestjs-project/src/channels/channels.service.integration-spec.ts": [
+      "nestjs-project/src/auth/entities/refresh-token.entity.ts",
+      "nestjs-project/src/auth/entities/verification-token.entity.ts",
+      "nestjs-project/src/channels/channels.service.ts",
+      "nestjs-project/src/channels/entities/channel.entity.ts",
+      "nestjs-project/src/test/create-test-data-source.ts",
+      "nestjs-project/src/users/entities/user.entity.ts"
+    ],
+    "nestjs-project/src/channels/channels.service.spec.ts": [
+      "nestjs-project/src/channels/channels.service.ts",
+      "nestjs-project/src/channels/entities/channel.entity.ts"
+    ],
+    "nestjs-project/src/channels/channels.service.ts": [
+      "nestjs-project/src/channels/entities/channel.entity.ts",
+      "nestjs-project/src/channels/nickname.util.ts"
+    ],
+    "nestjs-project/src/channels/entities/channel.entity.integration-spec.ts": [
+      "nestjs-project/src/auth/entities/refresh-token.entity.ts",
+      "nestjs-project/src/auth/entities/verification-token.entity.ts",
+      "nestjs-project/src/channels/entities/channel.entity.ts",
+      "nestjs-project/src/test/create-test-data-source.ts",
+      "nestjs-project/src/users/entities/user.entity.ts"
+    ],
+    "nestjs-project/src/channels/entities/channel.entity.ts": [
+      "nestjs-project/src/users/entities/user.entity.ts"
+    ],
+    "nestjs-project/src/channels/nickname.util.spec.ts": [
+      "nestjs-project/src/channels/nickname.util.ts"
+    ],
+    "nestjs-project/src/channels/nickname.util.ts": [],
+    "nestjs-project/src/common/exceptions/domain.exception.ts": [],
+    "nestjs-project/src/common/filters/domain-exception.filter.spec.ts": [
+      "nestjs-project/src/common/exceptions/domain.exception.ts",
+      "nestjs-project/src/common/filters/domain-exception.filter.ts"
+    ],
+    "nestjs-project/src/common/filters/domain-exception.filter.ts": [
+      "nestjs-project/src/common/exceptions/domain.exception.ts"
+    ],
+    "nestjs-project/src/common/filters/validation-exception.filter.spec.ts": [
+      "nestjs-project/src/common/filters/validation-exception.filter.ts"
+    ],
+    "nestjs-project/src/common/filters/validation-exception.filter.ts": [],
+    "nestjs-project/src/common/openapi/api-error-envelope.dto.ts": [],
+    "nestjs-project/src/config/app.config.ts": [],
+    "nestjs-project/src/config/auth.config.ts": [],
+    "nestjs-project/src/config/database.config.ts": [],
+    "nestjs-project/src/config/env.validation.integration-spec.ts": [
+      "nestjs-project/src/config/env.validation.ts"
+    ],
+    "nestjs-project/src/config/env.validation.ts": [],
+    "nestjs-project/src/config/mail.config.ts": [],
+    "nestjs-project/src/config/swagger.config.spec.ts": [
+      "nestjs-project/src/config/swagger.config.ts"
+    ],
+    "nestjs-project/src/config/swagger.config.ts": [],
+    "nestjs-project/src/database/data-source.ts": [
+      "nestjs-project/src/config/database.config.ts"
+    ],
+    "nestjs-project/src/database/migrations.integration-spec.ts": [
+      "nestjs-project/src/auth/entities/refresh-token.entity.ts",
+      "nestjs-project/src/auth/entities/verification-token.entity.ts",
+      "nestjs-project/src/channels/entities/channel.entity.ts",
+      "nestjs-project/src/database/migrations/1775687773260-CreateUsersAndChannels.ts",
+      "nestjs-project/src/database/migrations/1777579850478-CreateAuthTokens.ts",
+      "nestjs-project/src/test/create-test-data-source.ts",
+      "nestjs-project/src/users/entities/user.entity.ts"
+    ],
+    "nestjs-project/src/database/migrations/1775687773260-CreateUsersAndChannels.ts": [],
+    "nestjs-project/src/database/migrations/1777579850478-CreateAuthTokens.ts": [],
+    "nestjs-project/src/database/seeds/seed.ts": [
+      "nestjs-project/src/database/data-source.ts"
+    ],
+    "nestjs-project/src/mail/mail.constants.ts": [],
+    "nestjs-project/src/mail/mail.module.spec.ts": [
+      "nestjs-project/src/config/app.config.ts",
+      "nestjs-project/src/config/mail.config.ts",
+      "nestjs-project/src/mail/mail.module.ts"
+    ],
+    "nestjs-project/src/mail/mail.module.ts": [
+      "nestjs-project/src/config/mail.config.ts",
+      "nestjs-project/src/mail/mail.service.ts"
+    ],
+    "nestjs-project/src/mail/mail.service.integration-spec.ts": [
+      "nestjs-project/src/config/app.config.ts",
+      "nestjs-project/src/config/mail.config.ts",
+      "nestjs-project/src/mail/mail.constants.ts",
+      "nestjs-project/src/mail/mail.module.ts",
+      "nestjs-project/src/mail/mail.service.ts",
+      "nestjs-project/src/test/mailpit.ts"
+    ],
+    "nestjs-project/src/mail/mail.service.ts": [
+      "nestjs-project/src/config/app.config.ts",
+      "nestjs-project/src/mail/mail.constants.ts"
+    ],
+    "nestjs-project/src/mail/templates/confirmation.hbs": [],
+    "nestjs-project/src/mail/templates/password-reset.hbs": [],
+    "nestjs-project/src/main.ts": [
+      "nestjs-project/src/app.module.ts",
+      "nestjs-project/src/common/filters/domain-exception.filter.ts",
+      "nestjs-project/src/common/filters/validation-exception.filter.ts",
+      "nestjs-project/src/config/swagger.config.ts",
+      "nestjs-project/src/swagger/swagger-document.ts"
+    ],
+    "nestjs-project/src/metadata.ts": [],
+    "nestjs-project/src/openapi-export.integration-spec.ts": [
+      "nestjs-project/src/openapi-export.ts"
+    ],
+    "nestjs-project/src/openapi-export.ts": [
+      "nestjs-project/src/app.module.ts",
+      "nestjs-project/src/swagger/swagger-document.ts"
+    ],
+    "nestjs-project/src/swagger/swagger-document.ts": [
+      "nestjs-project/src/common/openapi/api-error-envelope.dto.ts"
+    ],
+    "nestjs-project/src/test/create-test-data-source.ts": [],
+    "nestjs-project/src/test/mailpit.ts": [],
+    "nestjs-project/src/users/entities/user.entity.integration-spec.ts": [
+      "nestjs-project/src/auth/entities/refresh-token.entity.ts",
+      "nestjs-project/src/auth/entities/verification-token.entity.ts",
+      "nestjs-project/src/channels/entities/channel.entity.ts",
+      "nestjs-project/src/test/create-test-data-source.ts",
+      "nestjs-project/src/users/entities/user.entity.ts"
+    ],
+    "nestjs-project/src/users/entities/user.entity.ts": [
+      "nestjs-project/src/channels/entities/channel.entity.ts"
+    ],
+    "nestjs-project/src/users/users.module.spec.ts": [
+      "nestjs-project/src/auth/entities/refresh-token.entity.ts",
+      "nestjs-project/src/auth/entities/verification-token.entity.ts",
+      "nestjs-project/src/channels/entities/channel.entity.ts",
+      "nestjs-project/src/test/create-test-data-source.ts",
+      "nestjs-project/src/users/entities/user.entity.ts",
+      "nestjs-project/src/users/users.module.ts"
+    ],
+    "nestjs-project/src/users/users.module.ts": [
+      "nestjs-project/src/channels/channels.module.ts",
+      "nestjs-project/src/users/entities/user.entity.ts",
+      "nestjs-project/src/users/users.service.ts"
+    ],
+    "nestjs-project/src/users/users.service.integration-spec.ts": [
+      "nestjs-project/src/auth/entities/refresh-token.entity.ts",
+      "nestjs-project/src/auth/entities/verification-token.entity.ts",
+      "nestjs-project/src/channels/channels.service.ts",
+      "nestjs-project/src/channels/entities/channel.entity.ts",
+      "nestjs-project/src/test/create-test-data-source.ts",
+      "nestjs-project/src/users/entities/user.entity.ts",
+      "nestjs-project/src/users/users.service.ts"
+    ],
+    "nestjs-project/src/users/users.service.ts": [
+      "nestjs-project/src/channels/channels.service.ts",
+      "nestjs-project/src/users/entities/user.entity.ts"
+    ],
+    "nestjs-project/test/app.e2e-spec.ts": [
+      "nestjs-project/src/app.module.ts"
+    ],
+    "nestjs-project/test/auth.e2e-spec.ts": [
+      "nestjs-project/src/app.module.ts",
+      "nestjs-project/src/auth/auth.service.ts",
+      "nestjs-project/src/auth/entities/refresh-token.entity.ts",
+      "nestjs-project/src/auth/entities/verification-token.entity.ts",
+      "nestjs-project/src/common/filters/domain-exception.filter.ts",
+      "nestjs-project/src/common/filters/validation-exception.filter.ts",
+      "nestjs-project/src/test/create-test-data-source.ts"
+    ],
+    "nestjs-project/test/jest-e2e.json": [],
+    "nestjs-project/test/swagger.e2e-spec.ts": [
+      "nestjs-project/src/app.module.ts",
+      "nestjs-project/src/common/filters/domain-exception.filter.ts",
+      "nestjs-project/src/common/filters/validation-exception.filter.ts",
+      "nestjs-project/src/swagger/swagger-document.ts"
+    ],
+    "nestjs-project/tsconfig.build.json": [],
+    "nestjs-project/tsconfig.json": [],
+    "next-frontend/app/(auth)/forgot-password/page.tsx": [
+      "next-frontend/components/auth/auth-footer.tsx",
+      "next-frontend/components/auth/brand-logo.tsx",
+      "next-frontend/components/auth/forgot-password-form.tsx",
+      "next-frontend/components/icons/arrow-back-icon.tsx",
+      "next-frontend/components/ui/card.tsx",
+      "next-frontend/components/ui/icon-button.tsx"
+    ],
+    "next-frontend/app/(auth)/login/page.tsx": [
+      "next-frontend/components/auth/auth-footer.tsx",
+      "next-frontend/components/auth/brand-logo.tsx",
+      "next-frontend/components/auth/login-form.tsx",
+      "next-frontend/components/ui/card.tsx"
+    ],
+    "next-frontend/app/(auth)/signup/page.tsx": [
+      "next-frontend/components/auth/auth-footer.tsx",
+      "next-frontend/components/auth/back-link.tsx",
+      "next-frontend/components/auth/brand-logo.tsx",
+      "next-frontend/components/auth/signup-form.tsx",
+      "next-frontend/components/icons/arrow-back-icon.tsx",
+      "next-frontend/components/ui/card.tsx"
+    ],
+    "next-frontend/app/api/auth/forgot-password/__tests__/route.integration.test.ts": [
+      "next-frontend/lib/env.ts",
+      "next-frontend/mocks/server.ts"
+    ],
+    "next-frontend/app/api/auth/forgot-password/route.ts": [
+      "next-frontend/lib/api/contracts.ts",
+      "next-frontend/lib/api/upstream.ts"
+    ],
+    "next-frontend/app/api/auth/login/__tests__/route.integration.test.ts": [
+      "next-frontend/lib/env.ts",
+      "next-frontend/mocks/server.ts"
+    ],
+    "next-frontend/app/api/auth/login/route.ts": [
+      "next-frontend/lib/api/contracts.ts",
+      "next-frontend/lib/api/upstream.ts",
+      "next-frontend/lib/auth/session.ts"
+    ],
+    "next-frontend/app/api/auth/logout/__tests__/route.integration.test.ts": [
+      "next-frontend/lib/env.ts",
+      "next-frontend/mocks/server.ts"
+    ],
+    "next-frontend/app/api/auth/logout/route.ts": [
+      "next-frontend/lib/api/upstream.ts",
+      "next-frontend/lib/auth/session.ts"
+    ],
+    "next-frontend/app/api/auth/signup/__tests__/route.integration.test.ts": [
+      "next-frontend/lib/env.ts",
+      "next-frontend/mocks/server.ts"
+    ],
+    "next-frontend/app/api/auth/signup/route.ts": [
+      "next-frontend/lib/api/contracts.ts",
+      "next-frontend/lib/api/upstream.ts"
+    ],
+    "next-frontend/app/globals.css": [],
+    "next-frontend/app/layout.tsx": [
+      "next-frontend/app/globals.css",
+      "next-frontend/components/auth/session-provider.tsx",
+      "next-frontend/lib/auth/session.ts",
+      "next-frontend/lib/utils.ts"
+    ],
+    "next-frontend/app/page.tsx": [],
+    "next-frontend/CLAUDE.md": [],
+    "next-frontend/components.json": [],
+    "next-frontend/components/auth/__tests__/back-link.test.tsx": [
+      "next-frontend/components/auth/back-link.tsx"
+    ],
+    "next-frontend/components/auth/__tests__/forgot-password-form.wiring.test.tsx": [
+      "next-frontend/components/auth/forgot-password-form.tsx",
+      "next-frontend/mocks/server.ts"
+    ],
+    "next-frontend/components/auth/__tests__/login-form.wiring.test.tsx": [
+      "next-frontend/components/auth/login-form.tsx",
+      "next-frontend/mocks/server.ts"
+    ],
+    "next-frontend/components/auth/__tests__/password-strength-meter.test.tsx": [
+      "next-frontend/components/auth/password-strength-meter.tsx"
+    ],
+    "next-frontend/components/auth/__tests__/password-visibility-toggle.test.tsx": [
+      "next-frontend/components/auth/password-visibility-toggle.tsx"
+    ],
+    "next-frontend/components/auth/__tests__/session-provider.test.tsx": [
+      "next-frontend/components/auth/session-provider.tsx"
+    ],
+    "next-frontend/components/auth/__tests__/signup-form.wiring.test.tsx": [
+      "next-frontend/components/auth/signup-form.tsx",
+      "next-frontend/mocks/server.ts"
+    ],
+    "next-frontend/components/auth/__tests__/terms-checkbox.test.tsx": [
+      "next-frontend/components/auth/terms-checkbox.tsx"
+    ],
+    "next-frontend/components/auth/auth-footer.tsx": [
+      "next-frontend/lib/utils.ts"
+    ],
+    "next-frontend/components/auth/back-link.tsx": [
+      "next-frontend/lib/utils.ts"
+    ],
+    "next-frontend/components/auth/brand-logo.tsx": [
+      "next-frontend/components/icons/streamtube-icon.tsx",
+      "next-frontend/lib/utils.ts"
+    ],
+    "next-frontend/components/auth/field-error.tsx": [],
+    "next-frontend/components/auth/forgot-password-form.tsx": [
+      "next-frontend/components/auth/field-error.tsx",
+      "next-frontend/components/ui/button.tsx",
+      "next-frontend/components/ui/input.tsx",
+      "next-frontend/components/ui/label.tsx",
+      "next-frontend/lib/api/contracts.ts",
+      "next-frontend/lib/auth/error-mapping.ts",
+      "next-frontend/lib/utils.ts"
+    ],
+    "next-frontend/components/auth/login-form.tsx": [
+      "next-frontend/components/auth/field-error.tsx",
+      "next-frontend/components/ui/button.tsx",
+      "next-frontend/components/ui/input.tsx",
+      "next-frontend/components/ui/label.tsx",
+      "next-frontend/lib/api/contracts.ts",
+      "next-frontend/lib/auth/error-mapping.ts",
+      "next-frontend/lib/utils.ts"
+    ],
+    "next-frontend/components/auth/password-strength-meter.tsx": [
+      "next-frontend/lib/utils.ts"
+    ],
+    "next-frontend/components/auth/password-visibility-toggle.tsx": [
+      "next-frontend/components/icons/eye-icon.tsx",
+      "next-frontend/components/icons/eye-off-icon.tsx",
+      "next-frontend/lib/utils.ts"
+    ],
+    "next-frontend/components/auth/session-provider.tsx": [],
+    "next-frontend/components/auth/signup-form.tsx": [
+      "next-frontend/components/auth/field-error.tsx",
+      "next-frontend/components/auth/password-strength-meter.tsx",
+      "next-frontend/components/auth/password-visibility-toggle.tsx",
+      "next-frontend/components/auth/terms-checkbox.tsx",
+      "next-frontend/components/ui/button.tsx",
+      "next-frontend/components/ui/input.tsx",
+      "next-frontend/components/ui/label.tsx",
+      "next-frontend/lib/api/contracts.ts",
+      "next-frontend/lib/auth/error-mapping.ts",
+      "next-frontend/lib/utils.ts"
+    ],
+    "next-frontend/components/auth/terms-checkbox.tsx": [
+      "next-frontend/components/ui/checkbox.tsx",
+      "next-frontend/lib/utils.ts"
+    ],
+    "next-frontend/components/icons/arrow-back-icon.tsx": [
+      "next-frontend/lib/utils.ts"
+    ],
+    "next-frontend/components/icons/check-icon.tsx": [
+      "next-frontend/lib/utils.ts"
+    ],
+    "next-frontend/components/icons/eye-icon.tsx": [
+      "next-frontend/lib/utils.ts"
+    ],
+    "next-frontend/components/icons/eye-off-icon.tsx": [
+      "next-frontend/lib/utils.ts"
+    ],
+    "next-frontend/components/icons/streamtube-icon.tsx": [
+      "next-frontend/lib/utils.ts"
+    ],
+    "next-frontend/components/ui/__tests__/checkbox.test.tsx": [
+      "next-frontend/components/ui/checkbox.tsx"
+    ],
+    "next-frontend/components/ui/__tests__/icon-button.test.tsx": [
+      "next-frontend/components/ui/icon-button.tsx"
+    ],
+    "next-frontend/components/ui/button.tsx": [
+      "next-frontend/lib/utils.ts"
+    ],
+    "next-frontend/components/ui/card.tsx": [
+      "next-frontend/lib/utils.ts"
+    ],
+    "next-frontend/components/ui/checkbox.tsx": [
+      "next-frontend/components/icons/check-icon.tsx",
+      "next-frontend/lib/utils.ts"
+    ],
+    "next-frontend/components/ui/icon-button.tsx": [
+      "next-frontend/lib/utils.ts"
+    ],
+    "next-frontend/components/ui/input.tsx": [
+      "next-frontend/lib/utils.ts"
+    ],
+    "next-frontend/components/ui/label.tsx": [
+      "next-frontend/lib/utils.ts"
+    ],
+    "next-frontend/compose.yaml": [],
+    "next-frontend/Dockerfile.dev": [],
+    "next-frontend/eslint.config.mjs": [],
+    "next-frontend/hooks/__tests__/use-session.test.tsx": [
+      "next-frontend/components/auth/session-provider.tsx",
+      "next-frontend/hooks/use-session.ts"
+    ],
+    "next-frontend/hooks/use-session.ts": [
+      "next-frontend/components/auth/session-provider.tsx"
+    ],
+    "next-frontend/instrumentation.ts": [],
+    "next-frontend/lib/__mocks__/server-only.ts": [],
+    "next-frontend/lib/api/contracts.ts": [
+      "next-frontend/lib/api/types.gen.ts"
+    ],
+    "next-frontend/lib/api/types.gen.ts": [],
+    "next-frontend/lib/api/upstream.ts": [
+      "next-frontend/lib/api/types.gen.ts",
+      "next-frontend/lib/env.ts"
+    ],
+    "next-frontend/lib/auth/__tests__/refresh.integration.test.ts": [
+      "next-frontend/mocks/server.ts"
+    ],
+    "next-frontend/lib/auth/__tests__/session.test.ts": [],
+    "next-frontend/lib/auth/error-mapping.ts": [
+      "next-frontend/lib/api/contracts.ts"
+    ],
+    "next-frontend/lib/auth/refresh.ts": [
+      "next-frontend/lib/auth/session.ts",
+      "next-frontend/lib/env.ts"
+    ],
+    "next-frontend/lib/auth/session.ts": [
+      "next-frontend/lib/env.ts"
+    ],
+    "next-frontend/lib/env.ts": [],
+    "next-frontend/lib/utils.ts": [],
+    "next-frontend/mocks/factories/.gitkeep": [],
+    "next-frontend/mocks/handlers/_seed.ts": [],
+    "next-frontend/mocks/handlers/auth.ts": [
+      "next-frontend/lib/api/contracts.ts",
+      "next-frontend/lib/env.ts"
+    ],
+    "next-frontend/mocks/handlers/index.ts": [
+      "next-frontend/mocks/handlers/_seed.ts",
+      "next-frontend/mocks/handlers/auth.ts"
+    ],
+    "next-frontend/mocks/server.ts": [
+      "next-frontend/mocks/handlers/index.ts"
+    ],
+    "next-frontend/mocks/setup.ts": [
+      "next-frontend/mocks/server.ts"
+    ],
+    "next-frontend/next.config.ts": [],
+    "next-frontend/package.json": [],
+    "next-frontend/playwright-report/index.html": [],
+    "next-frontend/playwright.config.ts": [],
+    "next-frontend/postcss.config.mjs": [],
+    "next-frontend/README.md": [],
+    "next-frontend/specs/forgot-password.plan.md": [],
+    "next-frontend/specs/login.plan.md": [],
+    "next-frontend/specs/signup.plan.md": [],
+    "next-frontend/test-results/.last-run.json": [],
+    "next-frontend/tests/auth-forgot-password.e2e-spec.ts": [
+      "next-frontend/tests/fixtures.ts"
+    ],
+    "next-frontend/tests/auth-login.e2e-spec.ts": [
+      "next-frontend/tests/fixtures.ts"
+    ],
+    "next-frontend/tests/auth-signup.e2e-spec.ts": [
+      "next-frontend/tests/fixtures.ts"
+    ],
+    "next-frontend/tests/fixtures.ts": [],
+    "next-frontend/tsconfig.json": [],
+    "next-frontend/vitest.config.ts": [],
+    "next-frontend/vitest.setup.ts": [],
+    "README.md": [],
+    "scripts/sync-openapi.sh": [],
+    "skills-lock.json": []
+  }
+}
