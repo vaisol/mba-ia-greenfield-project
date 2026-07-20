@@ -1,0 +1,25 @@
+FROM node:22-alpine AS builder
+
+WORKDIR /home/node/app
+
+COPY package*.json ./
+RUN npm ci
+
+COPY tsconfig*.json nest-cli.json ./
+COPY src ./src
+RUN npm run build
+
+FROM node:22-alpine
+
+RUN apk add --no-cache ffmpeg
+
+WORKDIR /home/node/app
+
+COPY package*.json ./
+RUN npm ci --omit=dev
+
+COPY --from=builder /home/node/app/dist ./dist
+
+USER node
+
+CMD ["node", "dist/worker/main.js"]
