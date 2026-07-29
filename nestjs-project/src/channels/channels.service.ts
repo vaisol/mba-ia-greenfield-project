@@ -26,40 +26,38 @@ export class ChannelsService {
 
   async createChannel(userId: string, email: string): Promise<Channel> {
     const baseNickname = sanitizeNickname(email.split('@')[0]);
+    const repository = this.dataSource.getRepository(Channel);
 
-    return this.dataSource.transaction(async (manager) => {
-      let nickname = baseNickname;
+    let nickname = baseNickname;
 
-      for (let attempt = 0; attempt <= MAX_RETRIES; attempt++) {
-        const existing = await manager.findOne(Channel, {
-          where: { nickname },
-        });
-        if (existing) {
-          nickname = appendRandomSuffix(baseNickname);
-          continue;
-        }
-
-        try {
-          return await manager.save(
-            manager.create(Channel, {
-              name: baseNickname,
-              nickname,
-              user_id: userId,
-            }),
-          );
-        } catch (err) {
-          if (isPgUniqueViolationOnColumn(err, NICKNAME_COLUMN)) {
-            // Concurrent insert between pre-check and save — retry with new suffix
-            nickname = appendRandomSuffix(baseNickname);
-          } else {
-            throw err;
-          }
-        }
+    for (let attempt = 0; attempt <= MAX_RETRIES; attempt++) {
+      const existing = await repository.findOne({
+        where: { nickname },
+      });
+      if (existing) {
+        nickname = appendRandomSuffix(baseNickname);
+        continue;
       }
 
-      throw new Error(
-        'Nickname conflict could not be resolved after max retries',
-      );
-    });
+      try {
+        return await repository.save(
+          repository.create({
+            name: baseNickname,
+            nickname,
+            user_id: userId,
+          }),
+        );
+      } catch (err) {
+        if (isPgUniqueViolationOnColumn(err, NICKNAME_COLUMN)) {
+          nickname = appendRandomSuffix(baseNickname);
+        } else {
+          throw err;
+        }
+      }
+    }
+
+    throw new Error(
+      'Nickname conflict could not be resolved after max retries',
+    );
   }
 }

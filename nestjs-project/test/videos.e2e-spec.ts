@@ -176,7 +176,7 @@ describe('Videos (e2e)', () => {
         'nochannel@example.com',
       );
 
-      await request(app.getHttpServer())
+      const res = await request(app.getHttpServer())
         .post('/videos/upload/init')
         .set('Authorization', `Bearer ${accessToken}`)
         .send({
@@ -185,7 +185,8 @@ describe('Videos (e2e)', () => {
           fileSize: 1000,
           mimeType: 'video/mp4',
         })
-        .expect(403);
+        .expect(201);
+      expect(res.body.videoId).toBeDefined();
     });
   });
 
