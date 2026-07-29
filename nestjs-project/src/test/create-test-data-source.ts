@@ -24,7 +24,9 @@ export function createTestDataSource(
 }
 
 export async function cleanAllTables(dataSource: DataSource): Promise<void> {
-  await dataSource.query(
-    'TRUNCATE TABLE "refresh_tokens", "verification_tokens", "videos", "channels", "users" RESTART IDENTITY CASCADE',
-  );
+  await dataSource.query('DELETE FROM "refresh_tokens"');
+  await dataSource.query('DELETE FROM "verification_tokens"');
+  await dataSource.query('DELETE FROM "videos"');
+  await dataSource.query('DELETE FROM "channels"');
+  await dataSource.query('DELETE FROM "users"');
 }

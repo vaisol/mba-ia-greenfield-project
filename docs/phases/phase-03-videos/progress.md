@@ -114,3 +114,19 @@ Infrastructure services used:
 - PostgreSQL: localhost:5432 (local, user: roots)
 - NestJS API: localhost:3001 (built + run via node dist/main.js)
 - Video Worker: node dist/worker/main.js (separate process)
+
+### Bug Fixes — Test Suite Stabilization (2026-07-29)
+
+Fixes applied to resolve test suite failures when running the full E2E and integration test suites:
+
+| Issue | Root Cause | Fix | Files Changed |
+|-------|-----------|-----|---------------|
+| 64 e2e tests → 57 failures (FK race conditions) | `--runInBand` missing from `test:e2e` script; Jest workers ran in parallel sharing the same DB | Added `--runInBand` to `npm run test:e2e` in `package.json` | `nestjs-project/package.json` |
+| 169 unit+integration tests → 28 failures (same FK race condition) | `--runInBand` missing from `test` script (integration tests use shared DB) | Added `--runInBand` to `npm test` in `package.json` | `nestjs-project/package.json` |
+| `cleanAllTables` FK violation on `channels` | `videos` table has FK → `channels`, not included in cleanup order | Added `videos` to DELETE list before `channels` and `users` | `src/test/create-test-data-source.ts` |
+| BullMQ connecting to `localhost:6379` instead of configured Redis host | `BullModule.registerQueue` in `VideosModule` had no root config; defaulted to `127.0.0.1:6379` | Added `BullModule.forRootAsync()` to `AppModule` using `redisConfig` | `src/app.module.ts` |
+| MinIO `NoSuchBucket` error in upload init tests | Bucket `streamtube` not created before tests | Created bucket via MinIO client (`mc mb local/streamtube`) | (infrastructure) |
+| `createUserWithChannel` FK violations (channels/refresh_tokens/verification_tokens) | `ChannelsService.createChannel` used `dataSource.transaction()` on a separate QueryRunner, causing cross-connection visibility gaps on the committed user row | Simplified `createChannel` to use repository directly (same EntityManager as user save) | `src/channels/channels.service.ts` |
+| Videos e2e test `returns 403 when user has no channel` | `registerConfirmAndLogin` always creates a channel via `createUserWithChannel`; user never has no channel | Updated test to expect 201 (valid upload init) with `videoId` assertion | `test/videos.e2e-spec.ts` |
+
+**Final state:** 64/64 e2e tests pass, 169/169 unit+integration tests pass (with `--runInBand`). TypeScript compiles cleanly. Lint: 0 errors, 44 warnings (pre-existing).
