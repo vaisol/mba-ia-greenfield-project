@@ -32,11 +32,33 @@ Todos os comandos rodam **dentro do container**:
 
 ```bash
 docker compose exec nestjs-api npm run start:dev   # Dev server (watch)
-docker compose exec nestjs-api npm test             # Unit + integration
-docker compose exec nestjs-api npm run test:e2e     # E2E (HTTP via supertest)
+docker compose exec nestjs-api npm test             # Unit + integration (--runInBand)
+docker compose exec nestjs-api npm run test:e2e     # E2E — HTTP via supertest (--runInBand)
 docker compose exec nestjs-api npm run test:cov     # Cobertura
 docker compose exec nestjs-api npx tsc --noEmit     # Type-check
 docker compose exec nestjs-api npm run lint         # ESLint
+```
+
+> **Importante:** Os testes unitários, de integração e e2e compartilham o mesmo banco de dados. Ambos `npm test` e `npm run test:e2e` devem rodar com `--runInBand` para evitar race conditions de FK, deadlocks e contaminação entre suites.
+
+## Docker Compose
+
+Serviços disponíveis no `compose.yaml`:
+
+| Serviço | Porta | Descrição |
+|---------|-------|-----------|
+| `nestjs-api` | 3000 | API NestJS |
+| `db` | 5432 | PostgreSQL 17 |
+| `redis` | 6379 | Redis (BullMQ) |
+| `minio` | 9000/9001 | Object Storage (S3-compatible) |
+| `mailpit` | 1025/8025 | SMTP para dev (UI em :8025) |
+| `video-worker` | — | Worker BullMQ para processamento de vídeos |
+
+Para subir o ambiente:
+
+```bash
+docker compose up -d                    # Infra + API + worker
+docker compose up -d db redis minio mailpit  # Apenas infra (para testes)
 ```
 
 ## Configuração do Jest (ESM)
