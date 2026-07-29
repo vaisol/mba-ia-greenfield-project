@@ -78,6 +78,14 @@
 | `videos.service.integration-spec.ts` | Integration | ~12 | Real Postgres via Compose: findBySlug/findById (not found, success with channel relation), listByChannel (non-owner sees only READY, owner sees all, pagination), updateVideoStatus (not found, status+metadata, error), completeUpload (not found, access denied), cancelUpload (not found, removes from DB) |
 | `test/videos.e2e-spec.ts` | E2E | ~13 | Full HTTP cycle: GET /videos/channel/:nickname (404, empty list), GET /videos/:slug (404), GET /videos/:slug/stream (404), GET /videos/:slug/download (404), GET /videos/:slug/thumbnail (404), POST /videos/upload/init (401, validation errors, 403 no channel), POST /videos/upload/complete (401), POST /videos/upload/cancel (401) |
 
+### Pós-implantação — Fix nanoid ESM (2026-07-28)
+
+| Item | Status | Detalhes |
+|------|--------|----------|
+| nanoid ESM no Jest | RESOLVIDO | `nanoid@^6.0.0` é ESM-only; o `ts-jest` em modo CJS falhava ao dar `require('nanoid')` no `VideosService`. |
+
+**Solução:** Adicionado `transformIgnorePatterns: ["/node_modules/(?!nanoid)/"]` em `nestjs-project/test/jest-e2e.json`. O `ts-jest` (que já transforma `.js` via `^.+\\.(t|j)s$`) converte os arquivos ESM do `nanoid` para CJS automaticamente.
+
 ### Manual Testing Results (2026-07-20)
 
 All core flows verified against local services (nerdctl + local PostgreSQL + local Node.js):

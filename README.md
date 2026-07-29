@@ -117,6 +117,8 @@ docker compose exec nestjs-api npm run test:cov       # cobertura
 
 Sufixos: `*.spec.ts` (unitário), `*.integration-spec.ts` (integração com banco real), `*.e2e-spec.ts` (end-to-end). Testes de integração/e2e rodam com `--runInBand`.
 
+> **Nota:** O `jest-e2e.json` inclui `transformIgnorePatterns: ["/node_modules/(?!nanoid)/"]` para que o `ts-jest` transpile o `nanoid` (ESM-only v6) para CJS, permitindo que as suítes e2e carreguem o `VideosService` sem erro de `require()`.
+
 ### Frontend (Vitest + Playwright)
 
 ```bash
