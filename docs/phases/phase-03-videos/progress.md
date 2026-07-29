@@ -58,6 +58,14 @@
 - **Tests:** tsc passes, lint clean (150 pre-existing errors in E2E test files only). Full test suite requires Docker.
 - **Observations:** Manual testing completed. Bug fixed: WorkerModule missing `User` entity registration.
 
+### Pós-implantação — Fix nanoid ESM (2026-07-28)
+
+| Item | Status | Detalhes |
+|------|--------|----------|
+| nanoid ESM no Jest | RESOLVIDO | `nanoid@^6.0.0` é ESM-only; o `ts-jest` em modo CJS falhava ao dar `require('nanoid')` no `VideosService`. |
+
+**Solução:** Adicionado `transformIgnorePatterns: ["/node_modules/(?!nanoid)/"]` em `nestjs-project/test/jest-e2e.json`. O `ts-jest` (que já transforma `.js` via `^.+\\.(t|j)s$`) converte os arquivos ESM do `nanoid` para CJS automaticamente.
+
 ### Manual Testing Results (2026-07-20)
 
 All core flows verified against local services (nerdctl + local PostgreSQL + local Node.js):
