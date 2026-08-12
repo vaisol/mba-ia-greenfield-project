@@ -14,8 +14,8 @@ services:
         condition: service_started
       redis:
         condition: service_healthy
-      minio:
-        condition: service_started
+      minio-init:
+        condition: service_completed_successfully
 
   db:
     image: postgres:17
@@ -64,6 +64,18 @@ services:
       timeout: 5s
       retries: 5
 
+  minio-init:
+    image: minio/mc:latest
+    depends_on:
+      minio:
+        condition: service_healthy
+    entrypoint: >
+      /bin/sh -c "
+      mc alias set local http://minio:9000 minioadmin minioadmin;
+      mc mb local/streamtube --ignore-existing;
+      echo 'Bucket streamtube ready';
+      "
+
   video-worker:
     build:
       context: .
@@ -88,8 +100,8 @@ services:
         condition: service_healthy
       redis:
         condition: service_healthy
-      minio:
-        condition: service_started
+      minio-init:
+        condition: service_completed_successfully
     restart: unless-stopped
 
 volumes:
