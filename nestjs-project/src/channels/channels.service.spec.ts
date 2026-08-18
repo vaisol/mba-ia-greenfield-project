@@ -35,7 +35,7 @@ function makeUniqueError(): QueryFailedError {
 
 function makeDataSource(manager: any): any {
   return {
-    transaction: jest.fn((cb: (manager: any) => Promise<any>) => cb(manager)),
+    getRepository: jest.fn().mockReturnValue(manager),
   };
 }
 
@@ -52,7 +52,7 @@ describe('ChannelsService', () => {
 
       const result = await service.createChannel('user-id', 'test@example.com');
 
-      expect(manager.findOne).toHaveBeenCalledWith(Channel, {
+      expect(manager.findOne).toHaveBeenCalledWith({
         where: { nickname: 'test' },
       });
       expect(manager.save).toHaveBeenCalledTimes(1);

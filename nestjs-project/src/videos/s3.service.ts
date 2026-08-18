@@ -44,11 +44,16 @@ export class S3Service {
     try {
       await this.s3Client.send(new HeadBucketCommand({ Bucket: this.bucket }));
       this.logger.log(`Bucket '${this.bucket}' already exists`);
-    } catch (error: any) {
+    } catch (error) {
+      const err = error as {
+        name?: string;
+        message?: string;
+        $metadata?: { httpStatusCode?: number };
+      };
       if (
-        error.name === 'NotFound' ||
-        error.name === 'NoSuchBucket' ||
-        error.$metadata?.httpStatusCode === 404
+        err.name === 'NotFound' ||
+        err.name === 'NoSuchBucket' ||
+        err.$metadata?.httpStatusCode === 404
       ) {
         this.logger.log(`Creating bucket '${this.bucket}'...`);
         await this.s3Client.send(
@@ -57,7 +62,7 @@ export class S3Service {
         this.logger.log(`Bucket '${this.bucket}' created successfully`);
       } else {
         this.logger.error(
-          `Failed to check/create bucket '${this.bucket}': ${error.message}`,
+          `Failed to check/create bucket '${this.bucket}': ${err.message ?? 'unknown error'}`,
         );
         throw error;
       }
