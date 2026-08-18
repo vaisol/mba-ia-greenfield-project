@@ -119,6 +119,8 @@ Sufixos: `*.spec.ts` (unitário), `*.integration-spec.ts` (integração com banc
 
 > **Nota:** O `jest-e2e.json` inclui `transformIgnorePatterns: ["/node_modules/(?!nanoid)/"]` para que o `ts-jest` transpile o `nanoid` (ESM-only v6) para CJS, permitindo que as suítes e2e carreguem o `VideosService` sem erro de `require()`.
 
+> **Suíte completa verde:** 26 suítes e **193 testes** (unitários + integração) e **64 testes e2e** passando. Correções recentes que fecharam a suíte: os ids de teste do `videos.service.integration-spec.ts` agora usam **uuids válidos** (a coluna `videos.id` é `uuid` no Postgres); o mock do `channels.service.spec.ts` usa `dataSource.getRepository()` (o `createChannel` não usa mais `transaction()`); o `migrations.integration-spec.ts` derruba as tabelas **sequencialmente** (evita deadlock entre os `DROP TABLE ... CASCADE` concorrentes) e remove o enum residual `verification_tokens_type_enum`.
+
 ### Frontend (Vitest + Playwright)
 
 ```bash
@@ -187,6 +189,22 @@ Componentes implementados:
 
 Segurança: endpoints protegidos por JWT, uploads autenticados via token, validação de ownership.
 
+## 🛡️ Segurança de Dependências e Higiene do Ambiente
+
+O arquivo **`AGENTS.md`** (raiz do repositório) define o ciclo de vida da sessão para agentes de IA:
+
+- **Teardown pré-`/quit`** — antes de sair do opencode, derrubar a infraestrutura de testes iniciada na sessão (Redis, MinIO, Mailpit, aliases de `/etc/hosts`, dados transitórios em `/tmp/opencode`) e verificar que nenhuma porta ficou aberta.
+- **Scan de vulnerabilidades (cron)** — entry semanal no crontab roda `npm audit --audit-level=high` no `nestjs-project` (log em `/tmp/opencode/npm-audit.log`). Vulnerabilidades identificadas são corrigidas assim que encontradas: atualização das dependências afetadas + suíte completa (`npm test -- --runInBand`), `npx tsc --noEmit` e `npm run lint` antes de declarar a correção concluída.
+
+### Vulnerabilidades removidas (`npm audit`)
+
+O primeiro scan identificou **36 vulnerabilidades (2 low, 14 moderate, 19 high, 1 critical)**. Após a remediação, `npm audit` reporta **0 vulnerabilidades**:
+
+- `npm audit fix` — correções dentro das faixas semver declaradas (31 pacotes).
+- `@nestjs-modules/mailer` `2.3.4 → 2.3.7` + declaração explícita do peer `nodemailer@^9.0.5` — elimina a cadeia vulnerável `nodemailer/mailparser/linkify-it` (via `preview-email`).
+- Remoção de `@eslint/eslintrc` — devDependency não utilizada, origem do `brace-expansion@1.1.12`.
+- `overrides` para dependências transitivas sem versão corrigida dentro da faixa: `brace-expansion@^1.1.18` (via `minimatch@3`), `mailparser@^3.9.15` (via `preview-email`) e `deepmerge-ts@^8.0.1` (via `html-to-text`).
+
 ## 🛠️ Estrutura do Projeto
 
 ```
@@ -239,6 +257,7 @@ green-field-ia-project/
 │   ├── compose.yaml                     # Docker Compose (dev server)
 │   └── Dockerfile.dev
 ├── CLAUDE.md                            # Instruções para IA
+├── AGENTS.md                            # Teardown de sessão e política de scan de dependências
 ├── FC Tube.fig                          # Design system do projeto (Figma)
 ├── whiteboard.png                       # Quadro branco do projeto
 └── README.md
@@ -268,5 +287,5 @@ Detalhes completos em `docs/project-plan.md`.
 | E-mail (dev) | Mailpit |
 | Containerização | Docker, Docker Compose |
 | Testes | Jest, Supertest (backend); Vitest, MSW, Playwright (frontend) |
-| Qualidade | ESLint, Prettier |
+| Qualidade | ESLint, Prettier, npm audit (cron semanal) |
 </content>
